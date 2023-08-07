@@ -84,7 +84,6 @@ Var
 uUtils : utils;
 begin
   uUtils := utils.Create;
-  uUtils.mudaCorBotaoLeave(Login);
 end;
 
 procedure TfrmLogin.mudarCorLoginLeave;

@@ -414,6 +414,11 @@
             <Form>frmLogin</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="views\produtos\uFrmProdutos.pas">
+            <Form>frmProdutos</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="uUtils.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

@@ -1,0 +1,126 @@
+unit uFrmProdutos;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, System.Rtti, FMX.Grid.Style,
+  FMX.ScrollBox, FMX.Grid, FMX.Layouts, uUtils;
+
+type
+  TfrmProdutos = class(TForm)
+    SuaPlataforma: TText;
+    Pesquisa: TRectangle;
+    edPesquisa: TEdit;
+    Image1: TImage;
+    btnCadastrar: TRectangle;
+    Text1: TText;
+    btnAlterar: TRectangle;
+    Text2: TText;
+    btnDeletar: TRectangle;
+    Text3: TText;
+    Grid1: TGrid;
+    LayPrincipal: TLayout;
+    procedure btnCadastrarMouseEnter(Sender: TObject);
+    procedure btnCadastrarMouseLeave(Sender: TObject);
+    procedure Text1MouseEnter(Sender: TObject);
+    procedure Text1MouseLeave(Sender: TObject);
+    procedure btnAlterarMouseEnter(Sender: TObject);
+    procedure btnAlterarMouseLeave(Sender: TObject);
+    procedure Text2MouseEnter(Sender: TObject);
+    procedure Text2MouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmProdutos: TfrmProdutos;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmProdutos.btnAlterarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.btnAlterarMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.btnCadastrarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.btnCadastrarMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.Text1MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.Text1MouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.Text2MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmProdutos.Text2MouseLeave(Sender: TObject);
+Ver
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnAlterar);
+  uUtils.Free;
+end;
+
+end.

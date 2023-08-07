@@ -1,0 +1,32 @@
+unit uUtils;
+
+interface
+
+uses FMX.Objects, System.UITypes;
+  type utils = class
+
+  public
+    procedure mudaCorBotaoEnter(Botao : TRectangle);
+    procedure mudaCorBotaoDegradeEnter(Botao : TRectangle);
+    procedure mudaCorBotaoLeave(Botao : TRectangle);
+  end;
+implementation
+
+{ utils }
+
+procedure utils.mudaCorBotaoDegradeLeave(Botao: TRectangle);
+begin
+
+end;
+
+procedure utils.mudaCorBotaoEnter(Botao : TRectangle);
+begin
+  Botao.Fill.Color := $FF9F88AE;
+end;
+
+procedure utils.mudaCorBotaoLeave(Botao: TRectangle);
+begin
+  Botao.Fill.Color := TAlphaColors.Blueviolet;
+end;
+
+end.

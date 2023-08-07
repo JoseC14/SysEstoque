@@ -564,8 +564,8 @@ begin
   begin
     limparTela();
     frmProdutos := TfrmProdutos.Create(Self);
-    frmProdutos.LayPrincipal.Parent := Principal;
-    frmProdutos.LayPrincipal.Create(self);
+    frmProdutos.Parent := Principal;
+    frm
      if isDashboardVisible = True then
      begin
       isDashboardVisible := False;

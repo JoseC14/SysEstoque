@@ -76,15 +76,11 @@ uUtils : utils;
 begin
   uUtils := utils.Create;
   uUtils.mudaCorBotaoEnter(Login);
-  uUtils.Free;
 end;
 
 procedure TfrmLogin.LoginMouseLeave(Sender: TObject);
-Var
-uUtils : utils;
 begin
-  uUtils := utils.Create;
-  uUtils.mudaCorBotaoLeave(Login);
+  mudarCorLoginLeave
 end;
 
 procedure TfrmLogin.mudarCorLoginLeave;

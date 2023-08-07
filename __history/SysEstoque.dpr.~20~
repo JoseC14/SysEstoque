@@ -6,9 +6,7 @@ uses
   uPrincipal in 'views\principal\uPrincipal.pas' {Form1},
   uFrmDashboard in 'views\dashboard\uFrmDashboard.pas' {frmDashboard},
   uFrmCadUser in 'views\caduser\uFrmCadUser.pas' {frmCadUser},
-  uFrmLogin in 'views\login\uFrmLogin.pas' {frmLogin},
-  uFrmProdutos in 'views\produtos\uFrmProdutos.pas' {frmProdutos},
-  uUtils in 'uUtils.pas';
+  uFrmLogin in 'views\login\uFrmLogin.pas' {frmLogin};
 
 {$R *.res}
 
@@ -18,6 +16,5 @@ begin
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TfrmDashboard, frmDashboard);
   Application.CreateForm(TfrmCadUser, frmCadUser);
-  Application.CreateForm(TfrmProdutos, frmProdutos);
   Application.Run;
 end.

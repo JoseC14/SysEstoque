@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   System.Math.Vectors, FMX.Objects, FMX.Layouts, FMX.Controls3D, FMX.Layers3D,
-  FMX.Controls.Presentation, FMX.StdCtrls, uFrmDashboard, FMX.Ani, uFrmProdutos;
+  FMX.Controls.Presentation, FMX.StdCtrls, uFrmDashboard, FMX.Ani;
 
 type
   TfrmPrincipal = class(TForm)
@@ -557,15 +557,10 @@ begin
 end;
 
 procedure TfrmPrincipal.Text2Click(Sender: TObject);
-Var
-frmProdutos : TfrmProdutos;
 begin
   if isProdutosVisible = False then
   begin
     limparTela();
-    frmProdutos := TfrmProdutos.Create(Self);
-    frmProdutos.LayPrincipal.Parent := Principal;
-    frmProdutos.LayPrincipal.Create(self);
      if isDashboardVisible = True then
      begin
       isDashboardVisible := False;

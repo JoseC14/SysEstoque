@@ -557,15 +557,10 @@ begin
 end;
 
 procedure TfrmPrincipal.Text2Click(Sender: TObject);
-Var
-frmProdutos : TfrmProdutos;
 begin
   if isProdutosVisible = False then
   begin
     limparTela();
-    frmProdutos := TfrmProdutos.Create(Self);
-    frmProdutos.LayPrincipal.Parent := Principal;
-    frmProdutos.LayPrincipal.Create(self);
      if isDashboardVisible = True then
      begin
       isDashboardVisible := False;
