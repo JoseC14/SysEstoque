@@ -1,0 +1,216 @@
+object frmDashboard: TfrmDashboard
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Dashboard'
+  ClientHeight = 632
+  ClientWidth = 935
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Position.X = -8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 977.000000000000000000
+    Size.Height = 617.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Rectangle2: TRectangle
+      Fill.Color = claWhite
+      Position.X = 328.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      object Text5: TText
+        Position.X = 8.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Transportadoras'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claLightgray
+        object Text6: TText
+          Position.X = -8.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'no '#250'ltimo m'#234's'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      object Text7: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 23.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Transportadora'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object Rectangle3: TRectangle
+      Fill.Color = claWhite
+      Position.X = 640.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      object Text8: TText
+        Position.X = 8.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Fornecedores'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claLightgray
+        object Text9: TText
+          Position.X = -8.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'no '#250'ltimo m'#234's'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      object Text10: TText
+        Position.X = 8.000000000000000000
+        Position.Y = 23.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Fornecedores'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object CardProduto: TLayout
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Rectangle1: TRectangle
+        Fill.Color = claWhite
+        Size.Width = 265.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        object Text2: TText
+          Position.X = 8.000000000000000000
+          Size.Width = 201.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Produtos em Estoque'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claLightgray
+          object Text4: TText
+            Position.X = -8.000000000000000000
+            Position.Y = 64.000000000000000000
+            Size.Width = 177.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'no '#250'ltimo m'#234's'
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        object Text3: TText
+          Position.X = 8.000000000000000000
+          Position.Y = 23.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Produtos em Estoque'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    object Chart1: TChart
+      Position.X = 40.000000000000000000
+      Position.Y = 240.000000000000000000
+      BackWall.Color = claWhite
+      BackWall.Dark3D = False
+      BackWall.Visible = False
+      Foot.Font.StyleExt = {00040000000200000004000000}
+      LeftWall.Color = claWhite
+      LeftWall.Visible = False
+      Legend.Title.Font.StyleExt = {00070000000000000004000000}
+      SubFoot.Font.StyleExt = {00040000000200000004000000}
+      Title.Alignment = taLeftJustify
+      Title.Text.Strings = (
+        'Total de Produtos')
+      BottomAxis.Title.Caption = 'Jan'
+      BottomAxis.Title.Position = tpStart
+      Chart3DPercent = 1
+      SeriesGroups = <
+        item
+          Name = 'Group1'
+        end>
+      View3DWalls = False
+      Zoom.Brush.Kind = None
+      Zoom.Pen.Fill.Color = claSilver
+      Color = claWhite
+      TabOrder = 3
+      ClipParent = True
+      Size.Width = 849.000000000000000000
+      Size.Height = 345.000000000000000000
+      Size.PlatformDefault = False
+      ColorPaletteIndex = 13
+      object Series1: TBarSeries
+        XValues.Name = 'X'
+        XValues.Order = loAscending
+        YValues.Name = 'Bar'
+        YValues.Order = loNone
+      end
+    end
+    object LayDashboard: TLayout
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Dashboard: TText
+        Position.X = 16.000000000000000000
+        Position.Y = -1.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Dashboard'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object Text1: TText
+        Position.Y = 47.000000000000000000
+        Size.Width = 297.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Veja as principais estatisticas de sua empresa'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claLightgray
+      end
+    end
+  end
+end
