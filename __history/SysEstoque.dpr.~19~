@@ -6,15 +6,15 @@ uses
   uPrincipal in 'views\principal\uPrincipal.pas' {Form1},
   uFrmDashboard in 'views\dashboard\uFrmDashboard.pas' {frmDashboard},
   uFrmCadUser in 'views\caduser\uFrmCadUser.pas' {frmCadUser},
-  uFrmLogin in 'views\login\uFrmLogin.pas' {frmLogin};
+  uFrmLogin in 'views\login\uFrmLogin.pas' {Form2};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TfrmLogin, frmLogin);
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TfrmDashboard, frmDashboard);
   Application.CreateForm(TfrmCadUser, frmCadUser);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

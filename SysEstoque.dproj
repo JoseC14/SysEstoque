@@ -373,6 +373,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
@@ -400,12 +402,16 @@
             <Form>Form1</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="views\login\uFrmLogin.pas">
-            <Form>frmLogin</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="views\dashboard\uFrmDashboard.pas">
             <Form>frmDashboard</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\caduser\uFrmCadUser.pas">
+            <Form>frmCadUser</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\login\uFrmLogin.pas">
+            <Form>frmLogin</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
@@ -428,6 +434,13 @@
                 <Source>
                     <Source Name="MainSource">SysEstoque.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\josec\Downloads\Componentes Delphi 10\Fortes Reports CE\fortesreport-ce-master\Binary\LibD26\dclfrce.bpl">File C:\Users\josec\Downloads\Componentes Delphi 10\Fortes Reports CE\fortesreport-ce-master\Binary\LibD26\dclfrce.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k260.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp260.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">

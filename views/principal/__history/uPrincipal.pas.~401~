@@ -33,6 +33,7 @@ type
     Rectangle2: TRectangle;
     Rectangle3: TRectangle;
     Rectangle4: TRectangle;
+    Button1: TButton;
     procedure ProdutosMouseEnter(Sender: TObject);
     procedure Image4MouseEnter(Sender: TObject);
     procedure Image1MouseEnter(Sender: TObject);

@@ -157,7 +157,6 @@ object frmPrincipal: TfrmPrincipal
         Size.Width = 201.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
-        OnClick = RelatoriosClick
         OnMouseEnter = RelatoriosMouseEnter
         OnMouseLeave = RelatoriosMouseLeave
         object Text4: TText
@@ -169,7 +168,6 @@ object frmPrincipal: TfrmPrincipal
           Text = 'Relat'#243'rios'
           TextSettings.Font.Family = 'Poppins'
           TextSettings.Font.StyleExt = {00070000000000000004000000}
-          OnClick = Text4Click
           OnMouseEnter = Text4MouseEnter
           OnMouseLeave = Text4MouseLeave
           object Image3: TImage
@@ -205,7 +203,6 @@ object frmPrincipal: TfrmPrincipal
             Size.Width = 40.000000000000000000
             Size.Height = 40.000000000000000000
             Size.PlatformDefault = False
-            OnClick = Image3Click
             OnMouseEnter = Image3MouseEnter
             OnMouseLeave = Image3MouseLeave
           end
@@ -233,7 +230,6 @@ object frmPrincipal: TfrmPrincipal
         Size.Width = 201.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
-        OnClick = TransportadoraClick
         OnMouseEnter = TransportadoraMouseEnter
         OnMouseLeave = TransportadoraMouseLeave
         object Text3: TText
@@ -755,6 +751,13 @@ object frmPrincipal: TfrmPrincipal
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
       OnClick = MenuClick
+    end
+    object Button1: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 336.000000000000000000
+      TabOrder = 0
+      Text = 'Button1'
+      OnClick = Button1Click
     end
   end
   object Principal: TLayout

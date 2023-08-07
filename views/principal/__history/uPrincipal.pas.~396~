@@ -33,6 +33,7 @@ type
     Rectangle2: TRectangle;
     Rectangle3: TRectangle;
     Rectangle4: TRectangle;
+    Button1: TButton;
     procedure ProdutosMouseEnter(Sender: TObject);
     procedure Image4MouseEnter(Sender: TObject);
     procedure Image1MouseEnter(Sender: TObject);
@@ -72,8 +73,6 @@ type
     procedure Image2Click(Sender: TObject);
     procedure TransportadoraClick(Sender: TObject);
     procedure Text4Click(Sender: TObject);
-    procedure RelatoriosClick(Sender: TObject);
-    procedure Image3Click(Sender: TObject);
   private
     { Private declarations }
     isMenuVIsible : Boolean;
@@ -219,33 +218,6 @@ end;
 procedure TfrmPrincipal.Image2MouseLeave(Sender: TObject);
 begin
  mudarCorLeave(Transportadora,isTransporadoraVisible)
-end;
-
-procedure TfrmPrincipal.Image3Click(Sender: TObject);
-begin
-if isRelatoriosVisible = False then
-  begin
-    limparTela();
-     if isDashboardVisible = True then
-     begin
-      isDashboardVisible := False;
-      mudarCorLeave(Dashboard,isDashboardVisible);
-     end;
-
-     if isProdutosVisible = True then
-     begin
-       isProdutosVisible := False;
-       mudarCorLeave(Produtos,isProdutosVisible)
-     end;
-
-     if isTransporadoraVisible = True then
-     begin
-       isTransporadoraVisible := False;
-       mudarCorLeave(Transportadora,isTransporadoraVisible)
-     end;
-     mudarCorEnter(Relatorios);
-     isRelatoriosVisible := True;
-   end;
 end;
 
 procedure TfrmPrincipal.Image3MouseEnter(Sender: TObject);
@@ -475,33 +447,6 @@ if isDashboardVisible = False then
  end;
 end;
 
-procedure TfrmPrincipal.RelatoriosClick(Sender: TObject);
-begin
-if isRelatoriosVisible = False then
-  begin
-    limparTela();
-     if isDashboardVisible = True then
-     begin
-      isDashboardVisible := False;
-      mudarCorLeave(Dashboard,isDashboardVisible);
-     end;
-
-     if isProdutosVisible = True then
-     begin
-       isProdutosVisible := False;
-       mudarCorLeave(Produtos,isProdutosVisible)
-     end;
-
-     if isTransporadoraVisible = True then
-     begin
-       isTransporadoraVisible := False;
-       mudarCorLeave(Transportadora,isTransporadoraVisible)
-     end;
-     mudarCorEnter(Relatorios);
-     isRelatoriosVisible := True;
-   end;
-end;
-
 procedure TfrmPrincipal.RelatoriosMouseEnter(Sender: TObject);
 begin
   mudarCorEnter(Relatorios)
@@ -650,10 +595,10 @@ if isRelatoriosVisible = False then
      if isTransporadoraVisible = True then
      begin
        isTransporadoraVisible := False;
-       mudarCorLeave(Transportadora,isTransporadoraVisible)
+       mudarCorLeave(Transportadora,isRelatoriosVisible)
      end;
-     mudarCorEnter(Relatorios);
-     isRelatoriosVisible := True;
+     mudarCorEnter(Transportadora);
+     isTransporadoraVisible := True;
    end;
 end;
 

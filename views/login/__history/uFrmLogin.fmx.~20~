@@ -171,14 +171,14 @@ object frmLogin: TfrmLogin
       Text = 
         '________________________________________________________________' +
         '_'
-      TextSettings.FontColor = claGray
+      TextSettings.FontColor = xE0E0E0E0
       object Text7: TText
         Position.X = 140.000000000000000000
         Size.Width = 50.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         Text = 'Ou'
-        TextSettings.FontColor = claGray
+        TextSettings.FontColor = xE0E3DADA
       end
     end
     object Text6: TText
@@ -190,7 +190,7 @@ object frmLogin: TfrmLogin
       Text = 
         '________________________________________________________________' +
         '_'
-      TextSettings.FontColor = claGray
+      TextSettings.FontColor = xE0E0E0E0
     end
   end
   object Titulo: TLayout

@@ -124,7 +124,6 @@ object frmLogin: TfrmLogin
       YRadius = 10.000000000000000000
       OnClick = LoginClick
       OnMouseEnter = LoginMouseEnter
-      OnMouseLeave = LoginMouseLeave
       object Text4: TText
         Align = Center
         Size.Width = 70.000000000000000000
@@ -134,8 +133,19 @@ object frmLogin: TfrmLogin
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         TextSettings.FontColor = xFF040404
         OnClick = Text4Click
-        OnMouseEnter = Text4MouseEnter
-        OnMouseLeave = Text4MouseLeave
+      end
+      object hoverLogin: TColorAnimation
+        StyleName = 'hoverLogin'
+        AnimationType = InOut
+        Duration = 0.500000000000000000
+        Interpolation = Circular
+        Inverse = True
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StartFromCurrent = True
+        StopValue = xFF9F88AE
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
       end
     end
     object Rectangle1: TRectangle
@@ -171,14 +181,14 @@ object frmLogin: TfrmLogin
       Text = 
         '________________________________________________________________' +
         '_'
-      TextSettings.FontColor = claGray
+      TextSettings.FontColor = xE0E0E0E0
       object Text7: TText
         Position.X = 140.000000000000000000
         Size.Width = 50.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         Text = 'Ou'
-        TextSettings.FontColor = claGray
+        TextSettings.FontColor = xE0E3DADA
       end
     end
     object Text6: TText
@@ -190,7 +200,7 @@ object frmLogin: TfrmLogin
       Text = 
         '________________________________________________________________' +
         '_'
-      TextSettings.FontColor = claGray
+      TextSettings.FontColor = xE0E0E0E0
     end
   end
   object Titulo: TLayout

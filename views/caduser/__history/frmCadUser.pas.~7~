@@ -1,0 +1,53 @@
+unit frmCadUser;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.Objects, FMX.Ani, FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TForm2 = class(TForm)
+    CrieConta: TText;
+    deEstoque: TText;
+    Text1: TText;
+    Layout1: TLayout;
+    CardLogin: TLayout;
+    InsiraSeusDados: TText;
+    BemVindodeVolta: TText;
+    Text2: TText;
+    Text3: TText;
+    Usuario: TRectangle;
+    edUser: TEdit;
+    btnCadUsuario: TRectangle;
+    CadastrarUsuario: TText;
+    Email: TRectangle;
+    Edit1: TEdit;
+    Text5: TText;
+    Text7: TText;
+    Text6: TText;
+    Text8: TText;
+    Text9: TText;
+    Senha: TRectangle;
+    edSenha: TEdit;
+    confirmaSenha: TRectangle;
+    edConfirmaSenha: TEdit;
+    Login: TRectangle;
+    Text4: TText;
+    hoverLogin: TColorAnimation;
+    Image1: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.fmx}
+
+end.

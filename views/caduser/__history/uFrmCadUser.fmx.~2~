@@ -1,0 +1,413 @@
+object frmCadUser: TfrmCadUser
+  Left = 0
+  Top = 0
+  Caption = 'Cadastrar Usu'#225'rio'
+  ClientHeight = 580
+  ClientWidth = 789
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Position.X = 400.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object CrieConta: TText
+      Position.X = 72.000000000000000000
+      Position.Y = 63.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Crie sua Conta e '
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text1: TText
+      Position.X = 72.000000000000000000
+      Position.Y = 103.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'melhore seu'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBlueviolet
+      object Image1: TImage
+        MultiResBitmap.Height = 94
+        MultiResBitmap.Width = 94
+        MultiResBitmap = <
+          item
+            Width = 94
+            Height = 94
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000005E0000005E0806000000AAD2A3
+              6E000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0A1949444154785EED9A5B6C14D719C7E7AC5BA96FA994873E3598BE56A241A0
+              A44D037692CA029A0B44AAB824ADBDEE2544A4C826100508F6DAD89424084849
+              529296ECAC9A50281488D4C690A801933405152450AA5E9E027DEA4BA4A2AA6A
+              1EBC33FDFFBFEFCCECDADEB577B1D776C5F7F7CE9CDB9CDBEF7CF3CD995D0726
+              93C96432994C2693C96432994C2693C96432994C2693C96432994CA6B92CE7C3
+              5B5E071E1B6A45D0EA9C8B21174451E09A9A6229445CF23299202977B14319F2
+              9191E6F970642408BB8F2EBF2675ABC8C043071E7BA7DD052E54CA10E8917020
+              194A5463CCC1C7A7B51C622AA9C2E220FEE4A9C32BBEA2859595F1E12DAD6824
+              9E1F45A04AE0FA71B1A471024766A39CD011478E44A55CAEE147DAD136B81EF3
+              5F5EF7DB79CCAB26030F4541744E8045042BF048961F479809740F9661ACF164
+              0D508F6BA475E5984C061EEA3EFAD0B9B8E83A004C8C1CE704B29497A529494B
+              0C0B00C9755C1B269110CB0F3E93AA5565E0BDBA8EAD28805C568D5B602B4C7D
+              B08E3E14389EAEB200F22C907C2E1042A62793812F53D7B1870AA00AF891C2F7
+              562F87C0A6BF17C8742DA9C56371D4CF9716C0B7585D067E8CBA8F3D12C2D4E9
+              7624AD80C952E0936C02579F07CCD37D0DDC11168C6BE6EB4E24035F419B7EF3
+              48218A8A59B16442A43BF1BB1B7FE0246B90F87ABFA30177AC12E3FFD5A6AACA
+              C057D1E613AB42807C1B80E9CBF581890C5D0C0216E25C04F8F5E439202E4A57
+              601219F82ADAB3F2542F60AE14D72DD60CE8A5387DBCFA7BBF9567B9DE05FE01
+              3B890C7C05BDF0F0895E58718E962B6E44A026D07107D0FAC5B025E47707FE85
+              CB1F359037F063B4FBE1E3801ED3DA3D58B1623D52D83EAFDCD291A37E9EE5F2
+              4C985006BE4CBB1E3CDE0B6639C0133722EE5C0197E2AA04BABC58F9ED64BACB
+              61D237595593AECC4C6A70D9D116D7E4168E44D1B5CF47F195AD67D64EF80DDF
+              746AD78AE3BDCE0539A0F33969641423E793423D235F474A9AF9521727E68F44
+              5F68DEF1CE83D7A5B082E68CC50F2E3F9A0F32EE2C1E567B9B5CE644DCF4B94F
+              0656FCBAD7173754EC07BC68E9829B568B50AC9E69C9F365D866867111FB7CB0
+              8E8A62F628D372DE05B89AFB7986136A4E8087A5E731E4761CBA5FC6B8391187
+              DB7E5783E1CBE2C6B074F4476E093405AA3B14C6057A5C2C6C1F5A9DDD76FA3B
+              05D0257C94E94996C05F2B0B37C99735B30E7EE7B223798CB30351012E13176B
+              E324E4652437B0AC31F007DA60E94558BAF4A9C01078BF2D0310A8B464EC72C2
+              E786D6709CA26DA757F325AB53CA92FAE2F3110FFCF7F5136856C1F7B51DC963
+              E0B074D911F88962E208FDE439192E466F7FDB916985CFF6D032B78C022AE98B
+              03E07818E721F92E2EEC38BD26AB354BEA39B336C4159D32663C5C7957A00A8C
+              062F529368D6C0F7B51DCE6384742F945A3822CA5FC55968B9EC1872B96F1D9E
+              16F8D20EDA6317E80F779A7E1943250B80431723A80C3D11E11763D7E11BD000
+              F546FEF3EF1BFE928A9A15F0B9070EE783C875C8A439587EB904F8B06C1A9C58
+              3DF2F962426BA7D5713230293765F80ABDE4D37D48F91723885D6959D8FBEEDA
+              D4BD5453EEBDD5856231E8C4F53AF6207EA96F38FB2F5F5C5133BE9DEC01F44C
+              1C77D00D72A0F486325C9C1097DBB5E422C903A951A3940AB9DCFBEBFA7C46CD
+              CADD0FE8D8326A4A3A9290BCA40F1988164061EEF7EBAA5A7A25F5B6FCAAB929
+              E36EEB39BBE6AACFAAAA51536AB47AEE7B2B8F09A616945055BC4A0101AD9D93
+              E7E850CAB5488A55B24AE0D8FFFEE335C3EFB9FF4DB174DF5FD26F1A420970DE
+              01859D671F9FD4D2A7A2261F365C3B5ADFCAC371B40B430873C544696D32799F
+              2700189743AF11B7A3EC5903C2369379ADADCDAB82E16B2787596922F5B4BEC9
+              AF0068E952DD77A7FD69CBDA2792707685810643A76604FCF6A5BF54E890E79D
+              C2958378251B471C7716E3F8061CE5D75826A468F85EBA16520F1177DFD279AB
+              82F3D7ABC37F6E292C9D2F47B89CED3094F5657F42BEB4B070F1E1E0F077EB72
+              2F37AB8683DFBEB400E801A1939E7C93270548C91E52E6AC79F0FDD99DE7DB0B
+              1F5C3F796AC9BC95CDC8BA9357CAB5C24860E9E1EB206C5902F8A8330EBE42C7
+              96D10BD70A6045CE16A409DE5918970B07CFCF0C74AAA1E0B7DE5BC8636ABC6D
+              6586A32414249F168FAD45901DF8B0BDA08501409E7A7BC997153E2195352075
+              5097F59960FD9696E6474759FEB67B43F91A807176A5D7A6770EADDC4711C73E
+              7DD7F9F619834E350CBC42E76F97091F88313F5F9A5C020214B3837F28414FF4
+              C13F00FF8E95F37105E1A7ED489B48117AA9FDB875C91D8FA2CEC9E16DF7107A
+              D0ABEDE3025E4BAB9636D0ADB6C105E316B2F0930FB30DF7E9632583986E3DFB
+              CD37009D2F1592E46CD191F857CEDAF326037998659FFF281BCA9555B4F59E3C
+              FFBDAEDD0F56DBE3131231B6C2362584E0BECEA1B045E2D0A8FEFC7475011871
+              85DD7FEC98514B4FE4E7327D7AE6EB6FE4330ED093B9EA299D36C2D4D241A063
+              F785CE71965E49D26E46DE10A50D64A563477BC848EE20E98F64D31124E4718D
+              D4E1F53887B3059D92814C97080753544B4FA7ED5596263A1767B2CF5F9CD8D2
+              C76ACBDD8742B4FF3D0527ED20599A825838E4932C6757E92CB9003E237CE142
+              E7AC41A74AA39EA29EB9EB501EAD8DF595E9B4352286E8A220CEEEB9F883BAA0
+              27DA72D7A110ABC6FFEEF5390A1CCDAA59E390D02F4212F23A0AE585172F7E7F
+              C67DFA5895463F056D594CE8B16C19D3163D69FCD1FF8A58540CA2ECDE3FFDE8
+              A6A027DABCF817A1CBC816B5449AD114B6CF4A67C725E76F73807EE987B36AE9
+              89D2A1DDAC9E5EF4735A3A20A8D1A94D8FE2918A963E55E889362F7E1D0F5C07
+              B7C385F5FE3DE9109DF3E3ED5CC694C1CBD18B97E706746A2C9BBAF4F4C2D7F8
+              739D3E4879C20C13083271DF3EE319176DDA7369FD7EA6A74B9B16BDCE45E4A2
+              A38B64106593120B903115F65E7E62D6DD4BB9D231D6AB6E40C7BC38194C7A5C
+              3B24C14CE67325FAF75D7E227D839C4E711C08DABDBD730110B2778A23987BD0
+              290EB66E75DD7910D061E9E304278BB34C1709B9FDA3A86FDFD5271B023D51F7
+              C29F89DB4194D4D5FE857F1CEEBBB27ECEB89772D5FDE6DAB5E0601EB72E6FEF
+              0A8B26DE853B099267D8B7BFC1D0A90BFFFCDDA9BBBFF46DA08E9BD1F56D88DC
+              C0589EDD7FE5C9ADFE9239A70AF0AA6BE38257C7593A771208C4D0D4B7CB6D8E
+              1D44DCFFD2C71B1A0EFDFF55355BFCC605AFEC03CEF57C52E18F1B45E0C541DF
+              2AAC69E4E9EEA2EFA71F6FA8FB17A25B493559FC86AF1E68CDB8CC5949A8EF94
+              A8486C5D3F88127EEEE53F3F65D027516D3F7647412B3D8A1CF28B3CD927690D
+              71E27F56F519F4DA54137880A54AB0E59FC24592E6EF19E09F7BE5AF3F369F5E
+              A36A025F8CDD30F82A6C5AB81EB27B91FC20E87FF52F66E9F5A8A687EBE54F87
+              AE2DBE7DF91711FD867FA0FA5590FD7AEEE0DF361AF43A55F3AEE6D2A7436716
+              DDDE761DB09B01FF3390BF0A9BCFBEF6F7AE9ABE4F37994C2693C96432994C26
+              93C96432994C2693C96432994C2693C96432994C26D39C5410FC0FF7F9883748
+              B98BE90000000049454E44AE426082}
+            FileName = 
+              'C:\Users\josec\Documents\ProjetosDelphi\financeiro\icons\graph.p' +
+              'ng'
+          end>
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object deEstoque: TText
+      Position.X = 200.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Trabalho'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  object CardLogin: TLayout
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 21.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 545.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object InsiraSeusDados: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 16.000000000000000000
+      Position.Y = 47.000000000000000000
+      Size.Width = 205.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Insira seus dados para contiuar '
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+    end
+    object BemVindodeVolta: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.Y = -1.000000000000000000
+      Size.Width = 269.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bem vindo de volta '#55357#56395
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text2: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.Y = 103.000000000000000000
+      Size.Width = 101.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Email'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text3: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.Y = 175.000000000000000000
+      Size.Width = 101.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Usu'#225'rio'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Usuario: TRectangle
+      Fill.Color = xFFE8E7E7
+      HitTest = False
+      Position.X = 24.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edUser: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object btnCadUsuario: TRectangle
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 24.000000000000000000
+      Position.Y = 504.000000000000000000
+      Size.Width = 277.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF6731BF
+      Stroke.Thickness = 2.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object CadastrarUsuario: TText
+        Align = Center
+        Anchors = [akLeft, akTop, akRight]
+        Size.Width = 276.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Fazer Login'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF040404
+      end
+    end
+    object Email: TRectangle
+      Fill.Color = xFFE8E7E7
+      HitTest = False
+      Position.X = 24.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        Anchors = [akLeft, akTop, akRight]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Text5: TText
+      Position.Y = 472.000000000000000000
+      Size.Width = 154.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 
+        '________________________________________________________________' +
+        '_'
+      TextSettings.FontColor = xE0E0E0E0
+      object Text7: TText
+        Position.X = 140.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ou'
+        TextSettings.FontColor = xE0E3DADA
+      end
+    end
+    object Text6: TText
+      Position.X = 176.000000000000000000
+      Position.Y = 470.000000000000000000
+      Size.Width = 154.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      Text = 
+        '________________________________________________________________' +
+        '_'
+      TextSettings.FontColor = xE0E0E0E0
+    end
+    object Text8: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 247.000000000000000000
+      Size.Width = 101.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Senha'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text9: TText
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 319.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Confirmar Senha'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Senha: TRectangle
+      Fill.Color = xFFE8E7E7
+      HitTest = False
+      Position.X = 24.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object confirmaSenha: TRectangle
+      Fill.Color = xFFE8E7E7
+      HitTest = False
+      Position.X = 24.000000000000000000
+      Position.Y = 344.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edConfirmaSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Login: TRectangle
+      Anchors = [akLeft, akTop, akRight]
+      Cursor = crHandPoint
+      Fill.Color = claBlueviolet
+      Position.X = 24.000000000000000000
+      Position.Y = 424.000000000000000000
+      Size.Width = 276.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF6731BF
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object Text4: TText
+        Align = Center
+        Size.Width = 70.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cadastrar'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF040404
+      end
+      object hoverLogin: TColorAnimation
+        StyleName = 'hoverLogin'
+        AnimationType = InOut
+        Duration = 0.500000000000000000
+        Interpolation = Circular
+        Inverse = True
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StartFromCurrent = True
+        StopValue = xFF9F88AE
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+  end
+end

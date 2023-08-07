@@ -21,6 +21,7 @@ type
     CadastrarUsuario: TText;
     Login: TRectangle;
     Text4: TText;
+    hoverLogin: TColorAnimation;
     Rectangle1: TRectangle;
     Edit1: TEdit;
     Text5: TText;
@@ -121,7 +122,7 @@ end;
 
 procedure TfrmLogin.Text4MouseLeave(Sender: TObject);
 begin
-  mudarCorLoginLeave;
+mudarCorLoginLeave;
 end;
 
 end.

@@ -13,8 +13,8 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TfrmLogin, frmLogin);
-  Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.CreateForm(TfrmDashboard, frmDashboard);
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.CreateForm(TfrmCadUser, frmCadUser);
   Application.Run;
 end.

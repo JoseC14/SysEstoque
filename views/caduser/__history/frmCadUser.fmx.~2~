@@ -1,0 +1,54 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 499
+  ClientWidth = 788
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Position.X = 400.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object CrieConta: TText
+      Position.X = 72.000000000000000000
+      Position.Y = 63.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Crie sua Conta e '
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text1: TText
+      Position.X = 72.000000000000000000
+      Position.Y = 103.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'melhore'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBlueviolet
+    end
+    object deEstoque: TText
+      Position.X = 200.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'de Estoque'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

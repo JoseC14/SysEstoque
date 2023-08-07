@@ -21,6 +21,7 @@ type
     CadastrarUsuario: TText;
     Login: TRectangle;
     Text4: TText;
+    hoverLogin: TColorAnimation;
     Rectangle1: TRectangle;
     Edit1: TEdit;
     Text5: TText;
@@ -35,9 +36,6 @@ type
     procedure CadastrarUsuarioClick(Sender: TObject);
     procedure btnCadUsuarioClick(Sender: TObject);
     procedure LoginMouseEnter(Sender: TObject);
-    procedure Text4MouseEnter(Sender: TObject);
-    procedure LoginMouseLeave(Sender: TObject);
-    procedure Text4MouseLeave(Sender: TObject);
   private
     { Private declarations }
     procedure mostrarCadUsuario();
@@ -72,12 +70,7 @@ end;
 
 procedure TfrmLogin.LoginMouseEnter(Sender: TObject);
 begin
-  mudarCorLoginEnter;
-end;
-
-procedure TfrmLogin.LoginMouseLeave(Sender: TObject);
-begin
-  mudarCorLoginLeave
+  mudarCorLoginEnter
 end;
 
 procedure TfrmLogin.mudarCorLoginLeave;
@@ -112,16 +105,6 @@ end;
 procedure TfrmLogin.Text4Click(Sender: TObject);
 begin
   mostrarPrincipal;
-end;
-
-procedure TfrmLogin.Text4MouseEnter(Sender: TObject);
-begin
-  mudarCorLoginEnter;
-end;
-
-procedure TfrmLogin.Text4MouseLeave(Sender: TObject);
-begin
-  mudarCorLoginLeave;
 end;
 
 end.
