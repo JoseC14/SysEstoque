@@ -1,0 +1,76 @@
+﻿inherited frmCadProdutos_iPhone4in: TfrmCadProdutos_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited LayPrincipal: TLayout
+    Position.X = 24.000000000000000000
+    inherited btnCadastrar: TRectangle
+      inherited Text8: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Layout1: TLayout
+      Position.Y = 56.000000000000000000
+      inherited SuaPlataforma: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text1: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited Text2: TText
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    inherited NomeProduto: TRectangle
+      inherited edProduto: TEdit
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Position.X = 32.000000000000000000
+        Position.Y = -24.000000000000000000
+        Size.Height = 29.000000000000000000
+      end
+    end
+    inherited Preco: TRectangle
+      inherited edPreco: TEdit
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Height = 29.000000000000000000
+      end
+    end
+    inherited Preço: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Quantidade: TRectangle
+      inherited edQuant: TEdit
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Height = 29.000000000000000000
+      end
+    end
+    inherited Text3: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Text4: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Text5: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Text6: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Text7: TText
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Validade: TRectangle
+      inherited deValidade: TDateEdit
+        Position.X = 24.000000000000000000
+        Position.Y = -32.000000000000000000
+        Size.Height = 30.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited cbFornecedora: TComboBox
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

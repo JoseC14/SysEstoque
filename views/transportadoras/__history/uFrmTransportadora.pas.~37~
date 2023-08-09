@@ -1,0 +1,209 @@
+unit uFrmTransportadora;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Objects, FMX.ScrollBox, FMX.Grid,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Layouts, uUtils;
+
+type
+  TfrmTransportadora = class(TForm)
+    LayPrincipal: TLayout;
+    Pesquisa: TRectangle;
+    edPesquisa: TEdit;
+    SuaPlataforma: TText;
+    btnAlterar: TRectangle;
+    Text2: TText;
+    btnCadastrar: TRectangle;
+    Text1: TText;
+    btnDeletar: TRectangle;
+    Text3: TText;
+    Grid1: TGrid;
+    Image1: TImage;
+    procedure Text1MouseEnter(Sender: TObject);
+    procedure btnCadastrarClick(Sender: TObject);
+    procedure Text2Click(Sender: TObject);
+    procedure btnAlterarClick(Sender: TObject);
+    procedure Text2MouseEnter(Sender: TObject);
+    procedure Text2MouseLeave(Sender: TObject);
+    procedure btnAlterarMouseEnter(Sender: TObject);
+    procedure btnAlterarMouseLeave(Sender: TObject);
+    procedure Text1MouseLeave(Sender: TObject);
+    procedure btnCadastrarMouseEnter(Sender: TObject);
+    procedure btnCadastrarMouseLeave(Sender: TObject);
+    procedure Text3MouseEnter(Sender: TObject);
+    procedure btnDeletarMouseEnter(Sender: TObject);
+    procedure btnDeletarMouseLeave(Sender: TObject);
+    procedure Text3MouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTransportadora: TfrmTransportadora;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmTransportadora.btnAlterarClick(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.btnAlterarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.btnAlterarMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnAlterar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.btnCadastrarClick(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.btnCadastrarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.btnCadastrarMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnCadastrar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.btnDeletarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnDeletar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.btnDeletarMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnDeletar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.Text1MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.Text1MouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnCadastrar);
+  uUtils.Free;
+end;
+
+procedure TfrmTransportadora.Text2Click(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.Text2MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnAlterar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.Text2MouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnAlterar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.Text3MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.mudaCorBotaoEnter(btnDeletar);
+  uUtils.Free;
+
+end;
+
+procedure TfrmTransportadora.Text3MouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+
+  uUtils.voltaCorBotaoDegrade(btnDeletar);
+  uUtils.Free;
+end;
+
+end.

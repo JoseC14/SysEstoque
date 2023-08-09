@@ -1,0 +1,57 @@
+unit uFrmCadProdutos;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Edit, FMX.DateTimeCtrls,
+  FMX.ComboEdit,MaskUtils, FMX.EditBox, FMX.SpinBox;
+
+type
+  TfrmCadProdutos = class(TForm)
+    SuaPlataforma: TText;
+    Text1: TText;
+    Layout1: TLayout;
+    NomeProduto: TRectangle;
+    edProduto: TEdit;
+    Text2: TText;
+    Preco: TRectangle;
+    Preço: TText;
+    Validade: TRectangle;
+    Text3: TText;
+    deValidade: TDateEdit;
+    Quantidade: TRectangle;
+    edQuant: TEdit;
+    Text4: TText;
+    Text5: TText;
+    Text6: TText;
+    Text7: TText;
+    cbTransportadora: TComboEdit;
+    cbFornecedora: TComboEdit;
+    cbTipoEstoque: TComboEdit;
+    btnCadastrar: TRectangle;
+    Text8: TText;
+    LayPrincipal: TLayout;
+    SpinBox1: TSpinBox;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadProdutos: TfrmCadProdutos;
+
+implementation
+
+{$R *.fmx}
+{$R *.iPhone4in.fmx IOS}
+
+procedure TfrmCadProdutos.FormCreate(Sender: TObject);
+begin
+  edPreco.Text := FormatMaskText('000.00',edPreco.Text);
+end;
+
+end.

@@ -1,0 +1,424 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Dashboard'
+  ClientHeight = 638
+  ClientWidth = 1151
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Left
+    Size.Width = 200.000000000000000000
+    Size.Height = 638.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Navbar: TRectangle
+      Align = Vertical
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.347826093435287500
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Size.Width = 201.000000000000000000
+      Size.Height = 638.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      object Dashboard: TRectangle
+        Corners = []
+        CornerType = InnerLine
+        Cursor = crHandPoint
+        Fill.Kind = None
+        Position.Y = 112.000000000000000000
+        Sides = []
+        Size.Width = 204.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = DashboardClick
+        OnMouseEnter = DashboardMouseEnter
+        OnMouseLeave = DashboardMouseLeave
+      end
+      object de: TText
+        Align = MostTop
+        Position.Y = 41.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'de'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        object Fornecedoras: TRectangle
+          Cursor = crHandPoint
+          Fill.Kind = None
+          Position.Y = 341.000000000000000000
+          Sides = []
+          Size.Width = 201.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = TransportadoraClick
+          OnMouseEnter = FornecedorasMouseEnter
+          OnMouseLeave = FornecedorasMouseLeave
+          object Text5: TText
+            Cursor = crHandPoint
+            Position.X = 56.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Fornecedoras'
+            TextSettings.Font.Family = 'Poppins'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF330650
+            OnMouseEnter = Text5MouseEnter
+            object Image4: TImage
+              MultiResBitmap = <
+                item
+                  Width = 40
+                  Height = 40
+                  PNG = {
+                    89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+                    6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                    02DF494441545847ED97B172D340108677EF2C3343E58A49A8DC399D33CE0B38
+                    4F205352E137083C81C91B4047477883E809483A661848DC2515EE3C74710521
+                    9697BD63654BB24E2787042633FA663CDABBF92DFDDED3ED9EA1A6A6E6818372
+                    DD88EEA3B00D04BB76403019DF44E736CE515557C64606F79AE180E638C2863C
+                    34218609293AFC7A131DC90C74216C698D67A8A12D53853A1F5AAE5E7ACDC108
+                    01DFA1822D995AA1A08588836DBD03D3F8E2D44C7D87CB9F4F55670C0A875663
+                    28D0F9A864F08F39782D4327ACE96FEBCE6C1A5F7E32E3295D4EB6D44E1F3195
+                    4526AF2B43C9D5092F551B095ECAD00B6779649657868044918419F23A175E83
+                    3A803EDFCD7BA3142DDD84E5B2C61A8E25CC93D1B9F01A2464831BC2D9E94A08
+                    700D5712AD91D139F01AFC5BC610390D56C16F90DC1970B1209A4968CB8D846B
+                    A4752EBC06D5C2F90E39E1EF9C4868EA44B666A6C8E81C780D7E89A313E2022B
+                    432F46CBDF59FE28A560206186BCCE45A577502B7A26A19738A7550B0C25CC90
+                    D7B9A864F0B3E9A131ED976592CCBBCA9A74BFED350607BCC499225DA42BA372
+                    AB335DE149B313298219C5D84A5A9E318D486FE3C7F0FCEC477461C5C236EC2C
+                    5B6399EE41B3F171CB1EA1E6BC6C8A3F68968B3F0AAE6E7394AA42A9415BC3B8
+                    4C341486A6A3B0D859320C0470CE7DFB648E743AFE55BC437BCD90FB3ABEF0E9
+                    120A0D9A034223C0030E87ACD8A40FAF309B816BE83CA643EE2699CDD50BC221
+                    1FBBDEDB4189CE9031683286018E34563FBD5422862336F02ADDF6F682F00DA0
+                    4DC28A02DDD2A0CD9AC68FF9B27067F02EE687EF275932C9E055FAB6B64239DD
+                    B20EDEAB3903DF5B05B2AC8CC9D202E8830C57E474D6605787FD7B352728DE68
+                    DD205C6E345EBEC29D9FD65983DA948C7F047786D24A9090E82AB5BAFF496D30
+                    0F2EB8EE5520D15983F10D1F4A6F7172DE14739299378A37469AB46E5507B9C7
+                    36E6B04BFCE75AA6EE1C3EC91C8F67AB226C9EA917EB7FCAF2BA9A9A9A870BC0
+                    6F620D3471815160D10000000049454E44AE426082}
+                  FileName = 
+                    'C:\Users\josec\Documents\ProjetosDelphi\financeiro\icons\fornece' +
+                    'dores.png'
+                end>
+              Cursor = crHandPoint
+              Position.X = -32.000000000000000000
+              Position.Y = 11.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 31.000000000000000000
+              Size.PlatformDefault = False
+              OnMouseEnter = Image4MouseEnter
+            end
+          end
+        end
+        object Image5: TImage
+          MultiResBitmap.Height = 30
+          MultiResBitmap.Width = 30
+          MultiResBitmap = <
+            item
+              Width = 30
+              Height = 30
+              PNG = {
+                89504E470D0A1A0A0000000D494844520000001E0000001E08060000003B30AE
+                A2000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                01FD49444154484BED96BD4E1B4110C767766D842524E8223A3AE86CC10BD84F
+                E04B99A7C07E843C41CC5BA4C3F704B8444AF870494717A533528AC4DCDDF09F
+                D5601D181F6B172E887F0D337BCCFEF7CB33C3048E6BC929FEF4D8D181FA6F22
+                34A18286592EFD31A5131B0D34A9BB57F3FC8D1C25C4B467C3F314742F4ECEAE
+                A7E98055148203FBF42E85D0E8E671D8313770BC95DC60072D73DF4548FA0E01
+                3DF3A34040BB59EFCE449ABEDB5E4654E1824F1D8E67F1F12EC09784FC0AF1AA
+                E9CC5C3B1BE1B5F13F0A6B465A1246063253EDA5E3C1C4114B6A4E1402D12CA7
+                5B7309F66885C50F5D36A59E9426AA422090B37C2EE76AB5716C1D5D900D55A2
+                29376B483F1409E504A94F2AB2901E69B643A3F1C3CB02F14C731785E20FB5AA
+                E640C6BBFDF198466DF2E3313B6AAB388BAB8CDE21DEC2EB5AFC8CD664DAA236
+                1E5A653D1EE7E9484DD60057E7732D77E163150874785CAFEF0973B46A75BEA8
+                6C020CC13DE753E938ED1CA244153C9C82F922ECCE08DD478DCF634415ADDD41
+                13932536160BDA9CD2423DAE67D99AEC294102895B6919FC6466312B350258FC
+                A63AAD8D8DF0DA70B1E5AC4CB911C89189CC8C46359140E4CCFC2834E55D59BE
+                55C6489F5A63CD8DC241D3FFCAEF2EF7FDE103157CC415C9449B007CFF9E37E4
+                CBEF7F777F6D38F0A9384C9DA77D113EC0FF6CDBF01C61A72C5F7F4ED3C11376
+                69B703BCA57BDC0000000049454E44AE426082}
+              FileName = 
+                'C:\Users\josec\Documents\ProjetosDelphi\financeiro\icons\dashboa' +
+                'rd.png'
+            end>
+          Cursor = crHandPoint
+          Position.X = 24.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 33.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = Image1Click
+          OnMouseEnter = Image1MouseEnter
+          OnMouseLeave = Image1MouseLeave
+        end
+      end
+      object Estoque: TText
+        Align = MostTop
+        Position.Y = 56.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Estoque'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object Gerenciamento: TText
+        Align = MostTop
+        Size.Width = 201.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Gerenciamento'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object Produtos: TRectangle
+        Cursor = crHandPoint
+        EnableDragHighlight = False
+        Fill.Kind = None
+        Position.Y = 208.000000000000000000
+        Sides = []
+        Size.Width = 203.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = ProdutosClick
+        OnMouseEnter = ProdutosMouseEnter
+        OnMouseLeave = ProdutosMouseLeave
+        object Text2: TText
+          Cursor = crHandPoint
+          Position.X = 56.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Produtos'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF330650
+          OnClick = Text2Click
+          OnMouseEnter = Text2MouseEnter
+          OnMouseLeave = Text2MouseLeave
+        end
+        object Image1: TImage
+          MultiResBitmap = <
+            item
+              Width = 40
+              Height = 40
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+                6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                02C7494441545847ED983D72DA401480DF9384D27826B474EE2821F2019274EE
+                A49CC0F804861BE408CE094C4E90A84B17A773631B4A2AD331A9826732991890
+                36EF8987072109563F135CF0CD68B4BBC2D267BDDDD5DB85970ECAB9342D70EB
+                60C3BBA83283C110FC71542E49694116332CBC320CF0A4694900FD45A07A243A
+                95964218722E8C65E27D428E31A163DAF83D7AB3252825E8D86E97448EA59A80
+                C2D3366AD0956A213243EC58DE0528E8E21681755400E3E048BD81BF5037E7F8
+                052D68CBA5EDD0DF29537DBA9BF997D212C394730C9643032EE9D00F0FAADEE0
+                8F7FF333184D1B56F3091193614F839E8180A70DB3F938094637D2FA4C6A8891
+                DE9C14B5A187B4A40818E25B296A83015E4831466A884F6C4F4991E92BA57E70
+                0191A7113C8B5A5308155CF3D9887E9749E6FD6E675F133E3B0709DFEC6EEEF7
+                F9502290058BED90CB753F26D728C6104ACD690CDD23D7049E4B7011D07FAC8A
+                4BF248A77B0CA4AA452E41FE2A18A0DEF383A4491B0AE73430D487BC5F969D83
+                84FACC39F717A946B45EBB75EB37B495A1374772D7581CC1F5F0312EE7D4DC0E
+                4D4757524D1D248504AB4247305788F7C15E0565447374564782BD8658874388
+                75E1BC312D777C11824ECD3BB36AF860D9F8EBC4766359D0DE05598E92863E8D
+                86E8EDA9103AD10561AF82CF726B503DF629DC9B609A1CE56B9F6FE7FE47A945
+                542AC80F754CEFC1B1BD7BEAF0999FC14CB9851F0B2F53ED1B0C966B189A5CDB
+                B4DAE3155D42328F1C53A9A032D7523112DD94CC2BC7542A181AEA3C968AAD49
+                1691632A151C3EF9E3C0DAC81745B2881C536D1F24B224A5B444538EA95C9049
+                955C91438ED999CD449B40C67299B8953965CC1B3B5AAD57EEB1B9A0F0AEDE60
+                4E39265590E732DD2D8F155969194B5A005DA0B47F7312D62175EBA3516B529F
+                C653A9EAE24FC25162C5C65B219360F48DAEED5C03A791DA0779234781EA1559
+                BD1D3870E0BF02F00FB04E51F478175E700000000049454E44AE426082}
+              FileName = 'C:\Users\josec\Downloads\iconsEstoque\inventory_black_24dp 1.png'
+            end>
+          Cursor = crHandPoint
+          Position.X = 24.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 33.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = Image1Click
+          OnMouseEnter = Image1MouseEnter
+          OnMouseLeave = Image1MouseLeave
+        end
+      end
+      object Relatorios: TRectangle
+        Cursor = crHandPoint
+        Fill.Kind = None
+        Position.Y = 456.000000000000000000
+        Sides = []
+        Size.Width = 201.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = RelatoriosClick
+        OnMouseEnter = RelatoriosMouseEnter
+        OnMouseLeave = RelatoriosMouseLeave
+        object Text4: TText
+          Cursor = crHandPoint
+          Position.X = 56.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Relat'#243'rios'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF330650
+          OnClick = Text4Click
+          OnMouseEnter = Text4MouseEnter
+          OnMouseLeave = Text4MouseLeave
+          object Image3: TImage
+            MultiResBitmap = <
+              item
+                Width = 40
+                Height = 40
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+                  6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01B2494441545847ED983156023110406712E159D2DAD969C7030EA07476EC0D
+                  F406E809C0CE524EA047604F20763628AD1D9DADB6C0EE98F04670DDACBEDDB8
+                  1179F905990979F04978C310F0783CDF833CA668EE045D44E8AB15359E2A8708
+                  A62469F0380BAF792681E43141B31AF494DC9592DBE5A9F2105043C0933D79F0
+                  F6123D3FF0EC0AC163028CE08C436760845D0E131805D5BEEE73E48E8CF7340B
+                  6E105ED0968D1734D6C15635200ED3100DD49313CE72A14AD7B17A3CE534C578
+                  364CF9E4128C09464FF3619BD342342AC19D588AA631096EE1114770BB1074CF
+                  592ED42F465D229C739AC2FA88CBE65F1EF1367E07A93D8EC21167095A958E6A
+                  CFB0C7696EAC8F98620AB3E4348B39187B3A1B7209A2C0A33A74B21B5869AE6F
+                  3614386298C6081321E09567D61004EA15571F8048AD21BA5473E9B51FC4D843
+                  6EB59C971902BAC86AE5350D19DC08B96E8EDD9719BD83197C955BEEB4813F29
+                  3326B9F13CEC7396C0B9601E398D53C1BC721A678245E4344E048BCA694A17B4
+                  91D318054915630EAD4055846DE434E61D9434E0C88ECF7FC60BC8698C7733FA
+                  8E44DF95408487287EE1F2A8A09CC7E3F9118077D158B34135DFFD9700000000
+                  49454E44AE426082}
+                FileName = 
+                  'C:\Users\josec\Documents\ProjetosDelphi\financeiro\icons\relator' +
+                  'ios.png'
+              end>
+            Cursor = crHandPoint
+            Position.X = -33.000000000000000000
+            Position.Y = 12.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 31.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = Image3Click
+            OnMouseEnter = Image3MouseEnter
+            OnMouseLeave = Image3MouseLeave
+          end
+        end
+      end
+      object Text1: TText
+        Cursor = crHandPoint
+        Position.X = 56.000000000000000000
+        Position.Y = 112.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Dashboard'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnClick = Text1Click
+        OnMouseEnter = Text1MouseEnter
+        OnMouseLeave = Text1MouseLeave
+      end
+      object Transportadora: TRectangle
+        Cursor = crHandPoint
+        Fill.Kind = None
+        Position.Y = 296.000000000000000000
+        Sides = []
+        Size.Width = 201.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = TransportadoraClick
+        OnMouseEnter = TransportadoraMouseEnter
+        OnMouseLeave = TransportadoraMouseLeave
+        object Text3: TText
+          Cursor = crHandPoint
+          Position.X = 56.000000000000000000
+          Size.Width = 105.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Transportadora'
+          TextSettings.Font.Family = 'Poppins'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF330650
+          OnClick = Text3Click
+          OnMouseEnter = Text3MouseEnter
+          OnMouseLeave = Text3MouseLeave
+          object Image2: TImage
+            MultiResBitmap = <
+              item
+                Width = 40
+                Height = 40
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+                  6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0232494441545847ED97B172DA401086F7EE0499F150384D6ABB4A69C02F604A
+                  574ADE207983E449429EC0C91344F70421B5C718CA54A64D15D225A0D37A6F59
+                  C94060244618CB33FA660EDDADC4CEAF636F97859A9A9A678E922B7306E13134
+                  E102108EC5B41F12988083D118EC542C85C90492B876D050DFC9B25F71290E26
+                  5AE3DBEBB91D89A5102CD0EF5C60D42D183861EBE3318D6778BACB4E6AFE34D0
+                  3E80380F6D0485D00EB040A30F228E41BD5B082D76B0C2545E201F926E237CA7
+                  94BA62CB23A31006A828EDAC80F666662359AC7070815B71D8BB717620AB8C83
+                  FFC4883045CA89D9A0F5E28EBAE242B1C613C4207E1CBAE8341D4E63C70BF569
+                  4E37D4377928E3C90FC9F89F9D18AA307EAE155C749BE107BE2154E214FBF287
+                  B4B37EAE407D3A376196CC2B93668633DBA700FDBC583DC463754EF13A72AA2B
+                  B383EB5049E4F25B598129B5C0B2B04095A4D9BC7AB0C0D8C180FA90AD22132A
+                  F07EC8B23445FCA59BC602FD5F700DD8E392F33F5F6EE751CF8F873C558A5C7F
+                  BE3EC70170EF92C5A0CFE6AE851D9F7FC4C420E20F99D2262FBE9442F7DE1719
+                  F23843EB5C7FEE88FA162A81DE967575CB74CD9B3B253D8A77E2665C2BA7CB8D
+                  15C6301A2651C7CFF328E36FE329468D5F65EADFA01D34D51D8DDFCB8D953268
+                  659A4B197F1B052673E86F8947C6DF8B8FA02FCB5CCAF833725DE117FCFCFBAA
+                  F9DA92FA97F46E6D3133490251D2C2CBF19FE2BD6D197F1B637099B317E14910
+                  53DF4CC42D18EC226C13FBF6575353536D00EE01A9693A09C26C74F300000000
+                  49454E44AE426082}
+                FileName = 
+                  'C:\Users\josec\Downloads\iconsEstoque\local_shipping_black_24dp ' +
+                  '1.png'
+              end>
+            Cursor = crHandPoint
+            Position.X = -32.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 31.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = Image2Click
+            OnMouseEnter = Image2MouseEnter
+            OnMouseLeave = Image2MouseLeave
+          end
+        end
+      end
+      object AnimMenu: TFloatAnimation
+        AnimationType = InOut
+        Duration = 0.500000000000000000
+        PropertyName = 'Position.X'
+        StartValue = 0.000000000000000000
+        StartFromCurrent = True
+        StopValue = -200.000000000000000000
+      end
+    end
+  end
+  object Principal: TLayout
+    Align = Center
+    Size.Width = 951.000000000000000000
+    Size.Height = 638.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+end

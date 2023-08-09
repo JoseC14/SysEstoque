@@ -1,0 +1,196 @@
+object frmFornecedoras: TfrmFornecedoras
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 601
+  ClientWidth = 993
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Position.X = -1.000000000000000000
+    Position.Y = -64.000000000000000000
+    Size.Width = 993.000000000000000000
+    Size.Height = 673.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Pesquisa: TRectangle
+      Fill.Color = claWhite
+      Position.X = 64.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object edPesquisa: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        Position.X = 2.000000000000000000
+        Hint = 'hfdfggf'
+        Size.Width = 207.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Pesquisar'
+        object SearchEditButton1: TSearchEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+    object SuaPlataforma: TText
+      Position.X = 64.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Fornecedores'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object btnAlterar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 520.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnClick = btnAlterarClick
+      OnMouseEnter = btnAlterarMouseEnter
+      OnMouseLeave = btnAlterarMouseLeave
+      object Text2: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Alterar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnClick = Text2Click
+        OnMouseEnter = Text2MouseEnter
+        OnMouseLeave = Text2MouseLeave
+      end
+    end
+    object btnCadastrar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 312.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnClick = btnCadastrarClick
+      OnMouseEnter = btnCadastrarMouseEnter
+      OnMouseLeave = btnCadastrarMouseLeave
+      object Text1: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cadastrar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnClick = Text1Click
+        OnMouseEnter = Text1MouseEnter
+        OnMouseLeave = Text1MouseLeave
+      end
+    end
+    object btnDeletar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 736.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnMouseEnter = btnDeletarMouseEnter
+      OnMouseLeave = btnDeletarMouseLeave
+      object Text3: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Deletar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnMouseEnter = Text3MouseEnter
+        OnMouseLeave = Text3MouseLeave
+      end
+    end
+    object Grid1: TGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 64.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 857.000000000000000000
+      Size.Height = 401.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      DefaultDrawing = False
+      Viewport.Width = 853.000000000000000000
+      Viewport.Height = 376.000000000000000000
+    end
+  end
+end

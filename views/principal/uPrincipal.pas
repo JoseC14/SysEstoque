@@ -6,7 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   System.Math.Vectors, FMX.Objects, FMX.Layouts, FMX.Controls3D, FMX.Layers3D,
-  FMX.Controls.Presentation, FMX.StdCtrls, uFrmDashboard, FMX.Ani, uFrmProdutos;
+  FMX.Controls.Presentation, FMX.StdCtrls, uFrmDashboard, FMX.Ani, uFrmProdutos,
+  uFrmTransportadora, uFrmFornecedoras;
 
 type
   TfrmPrincipal = class(TForm)
@@ -26,13 +27,12 @@ type
     Relatorios: TRectangle;
     Text4: TText;
     Image3: TImage;
-    Menu: TImage;
     AnimMenu: TFloatAnimation;
     Principal: TLayout;
-    Rectangle1: TRectangle;
-    Rectangle2: TRectangle;
-    Rectangle3: TRectangle;
-    Rectangle4: TRectangle;
+    Fornecedoras: TRectangle;
+    Text5: TText;
+    Image4: TImage;
+    Image5: TImage;
     procedure ProdutosMouseEnter(Sender: TObject);
     procedure Image4MouseEnter(Sender: TObject);
     procedure Image1MouseEnter(Sender: TObject);
@@ -45,11 +45,11 @@ type
     procedure DashboardMouseLeave(Sender: TObject);
     procedure Text1MouseLeave(Sender: TObject);
     procedure Image4MouseLeave(Sender: TObject);
-    procedure Text3MouseEnter(Sender: TObject);
-    procedure TransportadoraMouseEnter(Sender: TObject);
+    procedure Text5MouseEnter(Sender: TObject);
+    procedure FornecedorasMouseEnter(Sender: TObject);
     procedure Image2MouseEnter(Sender: TObject);
-    procedure Text3MouseLeave(Sender: TObject);
-    procedure TransportadoraMouseLeave(Sender: TObject);
+    procedure seLeave(Sender: TObject);
+    procedure FornecedorasMouseLeave(Sender: TObject);
     procedure Image2MouseLeave(Sender: TObject);
     procedure Text4MouseEnter(Sender: TObject);
     procedure Image3MouseEnter(Sender: TObject);
@@ -74,6 +74,14 @@ type
     procedure Text4Click(Sender: TObject);
     procedure RelatoriosClick(Sender: TObject);
     procedure Image3Click(Sender: TObject);
+    procedure Text3MouseEnter(Sender: TObject);
+    procedure TransportadoraMouseEnter(Sender: TObject);
+    procedure TransportadoraMouseLeave(Sender: TObject);
+    procedure Text3MouseLeave(Sender: TObject);
+    procedure Text5MouseLeave(Sender: TObject);
+    procedure Text5Click(Sender: TObject);
+    procedure FornecedorasClick(Sender: TObject);
+    procedure Image4Click(Sender: TObject);
   private
     { Private declarations }
     isMenuVIsible : Boolean;
@@ -84,9 +92,10 @@ type
     isRelatoriosVisible    : Boolean;
     procedure mudarCorEnter( Rectangle : TRectangle );
     procedure mudarCorLeave(Rectangle  : TRectangle; Visible : Boolean );
-    procedure limparTela();
+
   public
     { Public declarations }
+     procedure limparTela();
 
   end;
 
@@ -132,6 +141,12 @@ if isDashboardVisible = False then
      isRelatoriosVisible := False;
      mudarCorLeave(Relatorios,isRelatoriosVisible);
    end;
+
+   if isFornecedoraVisible = True then
+   begin
+     isFornecedoraVisible := False;
+     mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+   end;
    mudarCorEnter(Dashboard);
    isDashboardVisible := True;
  end;
@@ -168,6 +183,12 @@ begin
      begin
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
+     end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
      end;
      mudarCorEnter(Produtos);
      isProdutosVisible := True;
@@ -206,8 +227,14 @@ if isTransporadoraVisible = False then
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
      end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
      mudarCorEnter(Transportadora);
-     isTransporadoraVisible := True;
+     isTransporadoraVisible                := True;
    end;
 end;
 
@@ -243,6 +270,12 @@ if isRelatoriosVisible = False then
        isTransporadoraVisible := False;
        mudarCorLeave(Transportadora,isTransporadoraVisible)
      end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
      mudarCorEnter(Relatorios);
      isRelatoriosVisible := True;
    end;
@@ -258,20 +291,53 @@ begin
   mudarCorLeave(Relatorios,isRelatoriosVisible)
 end;
 
+procedure TfrmPrincipal.Image4Click(Sender: TObject);
+begin
+if isFornecedoraVisible = False then
+  begin
+    limparTela();
+     if isDashboardVisible = True then
+     begin
+      isDashboardVisible := False;
+      mudarCorLeave(Dashboard,isDashboardVisible);
+     end;
+
+     if isProdutosVisible = True then
+     begin
+       isProdutosVisible := False;
+       mudarCorLeave(Produtos,isProdutosVisible)
+     end;
+
+     if isRelatoriosVisible = True then
+     begin
+       isRelatoriosVisible := False;
+       mudarCorLeave(Relatorios,isRelatoriosVisible)
+     end;
+
+     if isTransporadoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
+     mudarCorEnter(Transportadora);
+     isFornecedoraVisible                := True;
+   end;
+end;
+
 procedure TfrmPrincipal.Image4MouseEnter(Sender: TObject);
 begin
-mudarCorEnter(Dashboard)
+mudarCorEnter(Fornecedoras)
 end;
 
 procedure TfrmPrincipal.Image4MouseLeave(Sender: TObject);
 begin
-  mudarCorLeave(Dashboard,isDashboardVisible)
+  mudarCorLeave(Fornecedoras,isFornecedoraVisible)
 end;
 
 procedure TfrmPrincipal.limparTela;
 var i : Integer;
 begin
-while Principal.ChildrenCount > 0 do
+while Principal.Controls.Count > 0 do
     Principal.RemoveObject(Principal.Children[0]);
 
 end;
@@ -333,6 +399,12 @@ begin
      begin
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
+     end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
      end;
      mudarCorEnter(Produtos);
      isProdutosVisible := True;
@@ -497,6 +569,12 @@ if isRelatoriosVisible = False then
        isTransporadoraVisible := False;
        mudarCorLeave(Transportadora,isTransporadoraVisible)
      end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
      mudarCorEnter(Relatorios);
      isRelatoriosVisible := True;
    end;
@@ -540,6 +618,12 @@ begin
      isRelatoriosVisible := False;
      mudarCorLeave(Relatorios,isRelatoriosVisible);
    end;
+
+   if isFornecedoraVisible = True then
+   begin
+     isFornecedoraVisible := False;
+     mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+   end;
    mudarCorEnter(Dashboard);
    isDashboardVisible := True;
  end;
@@ -557,8 +641,6 @@ begin
 end;
 
 procedure TfrmPrincipal.Text2Click(Sender: TObject);
-Var
-frmProdutos : TfrmProdutos;
 begin
   if isProdutosVisible = False then
   begin
@@ -582,6 +664,12 @@ begin
      begin
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
+     end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
      end;
      mudarCorEnter(Produtos);
      isProdutosVisible := True;
@@ -620,19 +708,81 @@ if isTransporadoraVisible = False then
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
      end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
+     frmTransportadora                     := TfrmTransportadora.Create(Self);
+     frmTransportadora.LayPrincipal.Parent := Principal;
+     frmTransportadora.LayPrincipal.Create(Self);
      mudarCorEnter(Transportadora);
-     isTransporadoraVisible := True;
+     isTransporadoraVisible                := True;
    end;
 end;
 
 procedure TfrmPrincipal.Text3MouseEnter(Sender: TObject);
 begin
-mudarCorEnter(Transportadora)
+mudarCorEnter(Transportadora);
 end;
 
 procedure TfrmPrincipal.Text3MouseLeave(Sender: TObject);
 begin
-  mudarCorLeave(Transportadora,isTransporadoraVisible)
+ mudarCorLeave(Transportadora,isTransporadoraVisible)
+end;
+
+procedure TfrmPrincipal.Text5Click(Sender: TObject);
+Var
+frmFornecedoras : TFrmFornecedoras;
+begin
+if isFornecedoraVisible = False then
+  begin
+    limparTela();
+     if isDashboardVisible = True then
+     begin
+      isDashboardVisible := False;
+      mudarCorLeave(Dashboard,isDashboardVisible);
+     end;
+
+     if isProdutosVisible = True then
+     begin
+       isProdutosVisible := False;
+       mudarCorLeave(Produtos,isProdutosVisible)
+     end;
+
+     if isTransporadoraVisible = True then
+     begin
+       isTransporadoraVisible := False;
+       mudarCorLeave(Transportadora,isTransporadoraVisible)
+     end;
+
+     if isRelatoriosVisible = True then
+     begin
+       isRelatoriosVisible := False;
+       mudarCorLeave(Relatorios,isRelatoriosVisible);
+     end;
+     frmFornecedoras := TfrmFornecedoras.Create(Self);
+     frmFornecedoras.LayPrincipal.Parent := Principal;
+     frmFornecedoras.LayPrincipal.Create(Self);
+     mudarCorEnter(Fornecedoras);
+     isFornecedoraVisible := True;
+   end;
+end;
+
+procedure TfrmPrincipal.Text5MouseEnter(Sender: TObject);
+begin
+mudarCorEnter(Fornecedoras)
+end;
+
+procedure TfrmPrincipal.Text5MouseLeave(Sender: TObject);
+begin
+  mudarCorLeave(Fornecedoras,isFornecedoraVisible)
+end;
+
+procedure TfrmPrincipal.seLeave(Sender: TObject);
+begin
+  mudarCorLeave(Fornecedoras,isFornecedoraVisible)
 end;
 
 procedure TfrmPrincipal.Text4Click(Sender: TObject);
@@ -656,6 +806,12 @@ if isRelatoriosVisible = False then
      begin
        isTransporadoraVisible := False;
        mudarCorLeave(Transportadora,isTransporadoraVisible)
+     end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
      end;
      mudarCorEnter(Relatorios);
      isRelatoriosVisible := True;
@@ -694,19 +850,68 @@ if isTransporadoraVisible = False then
        isRelatoriosVisible := False;
        mudarCorLeave(Relatorios,isRelatoriosVisible)
      end;
+
+     if isFornecedoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
      mudarCorEnter(Transportadora);
-     isTransporadoraVisible := True;
+     isTransporadoraVisible                := True;
    end;
 end;
 
 procedure TfrmPrincipal.TransportadoraMouseEnter(Sender: TObject);
 begin
-  mudarCorEnter(Transportadora)
+mudarCorEnter(Transportadora);
 end;
 
 procedure TfrmPrincipal.TransportadoraMouseLeave(Sender: TObject);
 begin
- mudarCorLeave(Transportadora,isTransporadoraVisible)
+  mudarCorLeave(Transportadora,isTransporadoraVisible)
+end;
+
+procedure TfrmPrincipal.FornecedorasClick(Sender: TObject);
+begin
+if isFornecedoraVisible = False then
+  begin
+    limparTela();
+     if isDashboardVisible = True then
+     begin
+      isDashboardVisible := False;
+      mudarCorLeave(Dashboard,isDashboardVisible);
+     end;
+
+     if isProdutosVisible = True then
+     begin
+       isProdutosVisible := False;
+       mudarCorLeave(Produtos,isProdutosVisible)
+     end;
+
+     if isRelatoriosVisible = True then
+     begin
+       isRelatoriosVisible := False;
+       mudarCorLeave(Relatorios,isRelatoriosVisible)
+     end;
+
+     if isTransporadoraVisible = True then
+     begin
+       isFornecedoraVisible := False;
+       mudarCorLeave(Fornecedoras,isFornecedoraVisible);
+     end;
+     mudarCorEnter(Transportadora);
+     isFornecedoraVisible                := True;
+   end;
+end;
+
+procedure TfrmPrincipal.FornecedorasMouseEnter(Sender: TObject);
+begin
+  mudarCorEnter(Fornecedoras)
+end;
+
+procedure TfrmPrincipal.FornecedorasMouseLeave(Sender: TObject);
+begin
+ mudarCorLeave(Fornecedoras,isFornecedoraVisible)
 end;
 
 end.

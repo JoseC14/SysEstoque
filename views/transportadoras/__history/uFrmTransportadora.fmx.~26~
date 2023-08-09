@@ -1,0 +1,216 @@
+object frmTransportadora: TfrmTransportadora
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 601
+  ClientWidth = 993
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Position.X = -4.000000000000000000
+    Position.Y = 2.000000000000000000
+    Size.Width = 1005.000000000000000000
+    Size.Height = 671.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Pesquisa: TRectangle
+      Fill.Color = claWhite
+      Position.X = 64.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object edPesquisa: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 34.000000000000000000
+        Hint = 'hfdfggf'
+        Size.Width = 185.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Pesquisar'
+      end
+    end
+    object SuaPlataforma: TText
+      Position.X = 64.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Transportadora'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object btnAlterar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 520.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnClick = btnAlterarClick
+      OnMouseEnter = btnAlterarMouseEnter
+      OnMouseLeave = btnAlterarMouseLeave
+      object Text2: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Alterar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnClick = Text2Click
+        OnMouseEnter = Text2MouseEnter
+        OnMouseLeave = Text2MouseLeave
+      end
+    end
+    object btnCadastrar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 312.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnClick = btnCadastrarClick
+      OnMouseEnter = btnCadastrarMouseEnter
+      OnMouseLeave = btnCadastrarMouseLeave
+      object Text1: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cadastrar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnMouseEnter = Text1MouseEnter
+        OnMouseLeave = Text1MouseLeave
+      end
+    end
+    object btnDeletar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 736.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnMouseEnter = btnDeletarMouseEnter
+      OnMouseLeave = btnDeletarMouseLeave
+      object Text3: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Deletar'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnMouseEnter = Text3MouseEnter
+        OnMouseLeave = Text3MouseLeave
+      end
+    end
+    object Grid1: TGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 64.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 857.000000000000000000
+      Size.Height = 401.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      DefaultDrawing = False
+      Viewport.Width = 853.000000000000000000
+      Viewport.Height = 376.000000000000000000
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            016649444154484BED94C151C3301045252A4807D81DA48450095001A102860A
+            623A081DA483840EE8C03AF99CAB4FE6FFCD3AB165ADE28113036F46B32B69BD
+            2B7D4976BF1EAF76425DD72BEFFD13DC15DA02ED8876E8BAEEAD2CCB03FC5924
+            0B84103630EB532F495514C5B3FA596ED49E19243F62B5AF682592795AF639CE
+            798DBBCA68072ACB1E2E93DF418ACFD3CC05C42C3566A13159B9463B50CD1D3E
+            A4CE93E484E39CA78FF81719CC104BC403255BB516FDFC52AD495C80B785AB0C
+            D23318CC4B7C8EB8000FD0354D732B3D039C43A1AEC4E7880B88EE6DDB3E4ACF
+            00DADFD3E22C3E6420C3A8003EE03594C3E66D91C1081DEFDF48A5D664F2D090
+            A0D2DBC4ED5728FA4ECD298BAE9CC9A9FD16EF23BB53927CC9832216BC450F68
+            010BE05B302F457C06023E58F343B83BB4FE2069771CD795332977B5E7EE1890
+            C2FCD95D4325E38B66727327DF2E40E614494A3417265329CF72C9C4801F1520
+            51917FFE1ECE7D01C836A646E338B71F0000000049454E44AE426082}
+          FileName = 
+            'C:\Users\josec\Documents\ProjetosDelphi\financeiro\icons\pesquis' +
+            'a.png'
+        end>
+      Position.X = 64.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end

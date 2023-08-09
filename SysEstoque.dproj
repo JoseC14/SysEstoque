@@ -419,6 +419,38 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="uUtils.pas"/>
+        <DCCReference Include="views\cadprodutos\uFrmCadProdutos.pas">
+            <Form>frmCadProdutos</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\updprodutos\uFrmUpdProdutos.pas">
+            <Form>frmUpdProdutos</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\transportadoras\uFrmTransportadora.pas">
+            <Form>frmTransportadora</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\cadtransportadora\UFrmCadTransportadora.pas">
+            <Form>frmCadTransportadora</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\updtranportadora\uFrmUpdTransportadora.pas">
+            <Form>frmUpdTransportadora</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\fornecedores\uFrmFornecedoras.pas">
+            <Form>frmFornecedoras</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\cadfornecedores\uFrmCadFornecedores.pas">
+            <Form>frmCadFornecedores</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\updfornecedoras\uFrmUpdFornecedoras.pas">
+            <Form>frmUpdFornecedoras</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
