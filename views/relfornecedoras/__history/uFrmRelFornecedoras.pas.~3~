@@ -1,0 +1,54 @@
+unit uFrmRelFornecedoras;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.DateTimeCtrls,
+  FMX.Layouts, uUtils;
+
+type
+  TfrmRelFornecedoras = class(TForm)
+    LayPrincipal: TLayout;
+    dtAte: TDateEdit;
+    dtDe: TDateEdit;
+    btnGerar: TRectangle;
+    Text8: TText;
+    NomeTransportadora: TRectangle;
+    edTransportadora: TEdit;
+    Rectangle1: TRectangle;
+    Edit1: TEdit;
+    Rectangle2: TRectangle;
+    Edit2: TEdit;
+    SuaPlataforma: TText;
+    Telefone: TRectangle;
+    edTelefone: TEdit;
+    Text1: TText;
+    Text2: TText;
+    Text3: TText;
+    Text4: TText;
+    Text5: TText;
+    Text6: TText;
+    procedure btnGerarMouseEnter(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelFornecedoras: TfrmRelFornecedoras;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmRelFornecedoras.btnGerarMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+
+end;
+
+end.

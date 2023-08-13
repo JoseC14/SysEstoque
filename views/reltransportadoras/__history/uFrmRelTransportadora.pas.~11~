@@ -1,0 +1,55 @@
+unit uFrmRelTransportadora;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.DateTimeCtrls,
+  FMX.Layouts, uUtils;
+
+type
+  TfrmRelTransportadora = class(TForm)
+    btnCadastrar: TRectangle;
+    Text8: TText;
+    NomeTransportadora: TRectangle;
+    edTransportadora: TEdit;
+    Rectangle1: TRectangle;
+    Edit1: TEdit;
+    Rectangle2: TRectangle;
+    Edit2: TEdit;
+    SuaPlataforma: TText;
+    Telefone: TRectangle;
+    edTelefone: TEdit;
+    Text1: TText;
+    Text2: TText;
+    Text3: TText;
+    Text4: TText;
+    Text5: TText;
+    Text6: TText;
+    dtDe: TDateEdit;
+    dtAte: TDateEdit;
+    LayPrincipal: TLayout;
+    procedure btnCadastrarMouseEnter(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelTransportadora: TfrmRelTransportadora;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmRelTransportadora.btnCadastrarMouseEnter(Sender: TObject);
+Var
+Uutils : utils;
+begin
+ Uutils := utils.Create;
+ Uutils.mudaCorBotaoEnter(btnCadastrar);
+end;
+
+end.

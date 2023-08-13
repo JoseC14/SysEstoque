@@ -1,0 +1,45 @@
+unit uFrmConfiguracoes;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TfrmConfiguracoes = class(TForm)
+    SuaPlataforma: TText;
+    Usuario: TRectangle;
+    edUsuario: TEdit;
+    SenhaAntiga: TRectangle;
+    edSenhaAntiga: TEdit;
+    NovaSenha: TRectangle;
+    edNovaSenha: TEdit;
+    Email: TRectangle;
+    edEmail: TEdit;
+    Text1: TText;
+    Text3: TText;
+    Text4: TText;
+    Text5: TText;
+    Text2: TText;
+    Rectangle1: TRectangle;
+    Edit2: TEdit;
+    Login: TRectangle;
+    Text6: TText;
+    btnCadUsuario: TRectangle;
+    CadastrarUsuario: TText;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConfiguracoes: TfrmConfiguracoes;
+
+implementation
+
+{$R *.fmx}
+
+end.

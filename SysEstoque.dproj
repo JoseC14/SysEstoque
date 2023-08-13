@@ -451,6 +451,38 @@
             <Form>frmUpdFornecedoras</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="views\reltransportadoras\uFrmRelTransportadora.pas">
+            <Form>frmRelTransportadora</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\relfornecedoras\uFrmRelFornecedoras.pas">
+            <Form>frmRelFornecedoras</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\relprodutos\uFrmRelProdutos.pas">
+            <Form>frmRelProdutos</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\configuracoes\uFrmConfiguracoes.pas">
+            <Form>frmConfiguracoes</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\tudopronto\uFrmTudoPronto.pas">
+            <Form>frmTudoPronto</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\esqueceusenha\uFrmEsqueceuSenha.pas">
+            <Form>frmEsqueciSenha</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\codigo\uFrmCodigo.pas">
+            <Form>frmCodigo</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="views\novasenha\uFrmNovaSenha.pas">
+            <Form>frmNovaSenha</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

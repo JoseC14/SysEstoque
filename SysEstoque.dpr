@@ -16,7 +16,15 @@ uses
   uFrmUpdTransportadora in 'views\updtranportadora\uFrmUpdTransportadora.pas' {frmUpdTransportadora},
   uFrmFornecedoras in 'views\fornecedores\uFrmFornecedoras.pas' {frmFornecedoras},
   uFrmCadFornecedores in 'views\cadfornecedores\uFrmCadFornecedores.pas' {frmCadFornecedores},
-  uFrmUpdFornecedoras in 'views\updfornecedoras\uFrmUpdFornecedoras.pas' {frmUpdFornecedoras};
+  uFrmUpdFornecedoras in 'views\updfornecedoras\uFrmUpdFornecedoras.pas' {frmUpdFornecedoras},
+  uFrmRelTransportadora in 'views\reltransportadoras\uFrmRelTransportadora.pas' {frmRelTransportadora},
+  uFrmRelFornecedoras in 'views\relfornecedoras\uFrmRelFornecedoras.pas' {frmRelFornecedoras},
+  uFrmRelProdutos in 'views\relprodutos\uFrmRelProdutos.pas' {frmRelProdutos},
+  uFrmConfiguracoes in 'views\configuracoes\uFrmConfiguracoes.pas' {frmConfiguracoes},
+  uFrmTudoPronto in 'views\tudopronto\uFrmTudoPronto.pas' {frmTudoPronto},
+  uFrmEsqueceuSenha in 'views\esqueceusenha\uFrmEsqueceuSenha.pas' {frmEsqueciSenha},
+  uFrmCodigo in 'views\codigo\uFrmCodigo.pas' {frmCodigo},
+  uFrmNovaSenha in 'views\novasenha\uFrmNovaSenha.pas' {frmNovaSenha};
 
 {$R *.res}
 
@@ -35,5 +43,13 @@ begin
   Application.CreateForm(TfrmFornecedoras, frmFornecedoras);
   Application.CreateForm(TfrmCadFornecedores, frmCadFornecedores);
   Application.CreateForm(TfrmUpdFornecedoras, frmUpdFornecedoras);
+  Application.CreateForm(TfrmRelTransportadora, frmRelTransportadora);
+  Application.CreateForm(TfrmRelFornecedoras, frmRelFornecedoras);
+  Application.CreateForm(TfrmRelProdutos, frmRelProdutos);
+  Application.CreateForm(TfrmConfiguracoes, frmConfiguracoes);
+  Application.CreateForm(TfrmTudoPronto, frmTudoPronto);
+  Application.CreateForm(TfrmEsqueciSenha, frmEsqueciSenha);
+  Application.CreateForm(TfrmCodigo, frmCodigo);
+  Application.CreateForm(TfrmNovaSenha, frmNovaSenha);
   Application.Run;
 end.

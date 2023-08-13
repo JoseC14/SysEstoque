@@ -1,0 +1,109 @@
+unit uFrmCodigo;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Layouts, uFrmNovaSenha, uUtils;
+
+type
+  TfrmCodigo = class(TForm)
+    CardLogin: TLayout;
+    InsiraSeusDados: TText;
+    BemVindodeVolta: TText;
+    Text2: TText;
+    RecuperarSenha: TRectangle;
+    Text4: TText;
+    edDigito1: TEdit;
+    Text8: TText;
+    Titulo: TLayout;
+    SuaPlataforma: TText;
+    Text1: TText;
+    Image1: TImage;
+    Digito1: TRectangle;
+    Digito2: TRectangle;
+    edDigito2: TEdit;
+    Digito3: TRectangle;
+    edDigito3: TEdit;
+    Digito4: TRectangle;
+    edDigito4: TEdit;
+    procedure RecuperarSenhaClick(Sender: TObject);
+    procedure Text4Click(Sender: TObject);
+    procedure Text8Click(Sender: TObject);
+    procedure RecuperarSenhaMouseEnter(Sender: TObject);
+    procedure Text4MouseEnter(Sender: TObject);
+    procedure RecuperarSenhaMouseLeave(Sender: TObject);
+    procedure Text4MouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCodigo: TfrmCodigo;
+
+implementation
+
+{$R *.fmx}
+
+uses uFrmLogin;
+
+procedure TfrmCodigo.RecuperarSenhaClick(Sender: TObject);
+Var
+frmNovaSenha : TfrmNovaSenha;
+begin
+  frmNovaSenha := TfrmNovaSenha.Create(Self);
+  frmNovaSenha.Show;
+  Close;
+end;
+
+procedure TfrmCodigo.RecuperarSenhaMouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+  uUtils.mudaCorBotaoEnter(RecuperarSenha);
+end;
+
+procedure TfrmCodigo.RecuperarSenhaMouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+  uUtils.voltaCorBotaoDegrade(RecuperarSenha);
+end;
+
+procedure TfrmCodigo.Text4Click(Sender: TObject);
+Var
+frmNovaSenha : TfrmNovaSenha;
+begin
+  frmNovaSenha := TfrmNovaSenha.Create(Self);
+  frmNovaSenha.Show;
+  Close;
+end;
+
+procedure TfrmCodigo.Text4MouseEnter(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+  uUtils.mudaCorBotaoEnter(RecuperarSenha);
+end;
+
+procedure TfrmCodigo.Text4MouseLeave(Sender: TObject);
+Var
+uUtils : utils;
+begin
+  uUtils := utils.Create;
+  uUtils.voltaCorBotaoDegrade(RecuperarSenha);
+end;
+
+procedure TfrmCodigo.Text8Click(Sender: TObject);
+begin
+  uFrmLogin.frmLogin.Visible := True;
+  Close;
+end;
+
+end.

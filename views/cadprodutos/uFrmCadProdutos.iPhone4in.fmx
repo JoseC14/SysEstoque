@@ -4,6 +4,7 @@
   DesignerMasterStyle = 0
   inherited LayPrincipal: TLayout
     Position.X = 24.000000000000000000
+    Position.Y = 96.000000000000000000
     inherited btnCadastrar: TRectangle
       inherited Text8: TText
         TextSettings.Font.StyleExt = {00070000000000000004000000}

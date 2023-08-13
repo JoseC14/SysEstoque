@@ -1,0 +1,64 @@
+unit uFrmCodigo;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.Edit, FMX.Layouts, uFrmNovaSenha;
+
+type
+  TfrmCodigo = class(TForm)
+    CardLogin: TLayout;
+    InsiraSeusDados: TText;
+    BemVindodeVolta: TText;
+    Text2: TText;
+    Login: TRectangle;
+    Text4: TText;
+    edDigito1: TEdit;
+    Text8: TText;
+    Titulo: TLayout;
+    SuaPlataforma: TText;
+    Text1: TText;
+    Image1: TImage;
+    Digito1: TRectangle;
+    Digito2: TRectangle;
+    edDigito2: TEdit;
+    Digito3: TRectangle;
+    edDigito3: TEdit;
+    Digito4: TRectangle;
+    edDigito4: TEdit;
+    procedure LoginClick(Sender: TObject);
+    procedure Text4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCodigo: TfrmCodigo;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmCodigo.LoginClick(Sender: TObject);
+Var
+frmNovaSenha : TfrmNovaSenha;
+begin
+  frmNovaSenha := TfrmNovaSenha.Create(Self);
+  frmNovaSenha.Show;
+  Visible      := False;
+end;
+
+procedure TfrmCodigo.Text4Click(Sender: TObject);
+Var
+frmNovaSenha : TfrmNovaSenha;
+begin
+  frmNovaSenha := TfrmNovaSenha.Create(Self);
+  frmNovaSenha.Show;
+  Visible      := False;
+end;
+
+end.

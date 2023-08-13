@@ -14,14 +14,13 @@ object frmDashboard: TfrmDashboard
   object LayPrincipal: TLayout
     Anchors = [akLeft, akTop, akRight]
     Position.X = -8.000000000000000000
-    Position.Y = 16.000000000000000000
     Size.Width = 977.000000000000000000
-    Size.Height = 617.000000000000000000
+    Size.Height = 633.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object Rectangle2: TRectangle
       Fill.Color = claWhite
-      Position.X = 328.000000000000000000
+      Position.X = 355.000000000000000000
       Position.Y = 120.000000000000000000
       Size.Width = 265.000000000000000000
       Size.Height = 105.000000000000000000
@@ -62,7 +61,7 @@ object frmDashboard: TfrmDashboard
     end
     object Rectangle3: TRectangle
       Fill.Color = claWhite
-      Position.X = 640.000000000000000000
+      Position.X = 672.000000000000000000
       Position.Y = 120.000000000000000000
       Size.Width = 265.000000000000000000
       Size.Height = 105.000000000000000000
@@ -110,6 +109,8 @@ object frmDashboard: TfrmDashboard
       TabOrder = 2
       object Rectangle1: TRectangle
         Fill.Color = claWhite
+        Position.X = 25.000000000000000000
+        Position.Y = -1.000000000000000000
         Size.Width = 265.000000000000000000
         Size.Height = 105.000000000000000000
         Size.PlatformDefault = False
@@ -175,7 +176,7 @@ object frmDashboard: TfrmDashboard
       Color = claWhite
       TabOrder = 3
       ClipParent = True
-      Size.Width = 849.000000000000000000
+      Size.Width = 897.000000000000000000
       Size.Height = 345.000000000000000000
       Size.PlatformDefault = False
       ColorPaletteIndex = 13

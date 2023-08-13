@@ -1,0 +1,70 @@
+inherited frmPrincipal_Macintosh: TfrmPrincipal_Macintosh
+  DesignerMasterStyle = 0
+  inherited Layout1: TLayout
+    inherited Navbar: TRectangle
+      inherited de: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited Fornecedoras: TRectangle
+          inherited Text5: TText
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited Image5: TImage
+          MultiResBitmap.Height = 30
+          MultiResBitmap.Width = 30
+        end
+      end
+      inherited Estoque: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Gerenciamento: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Produtos: TRectangle
+        inherited Text2: TText
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+      inherited Relatorios: TRectangle
+        inherited Text4: TText
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Image6: TImage
+          MultiResBitmap.Height = 33
+        end
+      end
+      inherited Text1: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Transportadora: TRectangle
+        inherited Text3: TText
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    inherited hoverRelatorios: TRectangle
+      inherited Text6: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text7: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Text8: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited Configuracoes: TRectangle
+      inherited Text10: TText
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited Image7: TImage
+          MultiResBitmap.Height = 40
+          MultiResBitmap.Width = 40
+        end
+      end
+    end
+  end
+  inherited TelaCheia: TImage
+    MultiResBitmap.Height = 958
+    MultiResBitmap.Width = 982
+  end
+end

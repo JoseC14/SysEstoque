@@ -1,0 +1,245 @@
+object frmRelTransportadora: TfrmRelTransportadora
+  Left = 0
+  Top = 0
+  Caption = 'Relat'#243'rios de Transportadora'
+  ClientHeight = 633
+  ClientWidth = 777
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Size.Width = 777.000000000000000000
+    Size.Height = 569.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object dtAte: TDateEdit
+      IsEmpty = True
+      Date = 45150.000000000000000000
+      Position.X = 408.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object dtDe: TDateEdit
+      Date = 45149.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object btnGerar: TRectangle
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF955CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 477.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnMouseEnter = btnGerarMouseEnter
+      OnMouseLeave = btnGerarMouseLeave
+      object Text8: TText
+        Align = Center
+        Cursor = crHandPoint
+        Size.Width = 105.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Gerar Relat'#243'rio'
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF330650
+        OnMouseEnter = Text8MouseEnter
+        OnMouseLeave = Text8MouseLeave
+      end
+    end
+    object NomeTransportadora: TRectangle
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 56.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edTransportadora: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Rectangle1: TRectangle
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 400.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Rectangle2: TRectangle
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 408.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object SuaPlataforma: TText
+      Position.X = 64.000000000000000000
+      Position.Y = 87.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Relat'#243'rio de Transportadora'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Telefone: TRectangle
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 56.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edTelefone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Text1: TText
+      Position.X = 44.000000000000000000
+      Position.Y = 375.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Telefone'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text2: TText
+      Position.X = 36.000000000000000000
+      Position.Y = 263.000000000000000000
+      Size.Width = 197.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nome da Transportadora'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text3: TText
+      Position.X = 388.000000000000000000
+      Position.Y = 263.000000000000000000
+      Size.Width = 69.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CNPJ'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text4: TText
+      Position.X = 404.000000000000000000
+      Position.Y = 375.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Endere'#231'o'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text5: TText
+      Position.X = 44.000000000000000000
+      Position.Y = 159.000000000000000000
+      Size.Width = 45.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'De'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text6: TText
+      Position.X = 396.000000000000000000
+      Position.Y = 159.000000000000000000
+      Size.Width = 53.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'At'#233
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+  end
+end

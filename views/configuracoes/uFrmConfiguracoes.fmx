@@ -1,0 +1,266 @@
+object frmConfiguracoes: TfrmConfiguracoes
+  Left = 0
+  Top = 0
+  Caption = 'V'
+  ClientHeight = 532
+  ClientWidth = 806
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Size.Width = 809.000000000000000000
+    Size.Height = 529.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Login: TRectangle
+      Anchors = [akLeft, akTop, akRight]
+      Cursor = crHandPoint
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF8E5CB8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF682690
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.X = 576.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 175.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF6731BF
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object Text6: TText
+        Align = Center
+        Size.Width = 70.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Editar'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF040404
+      end
+    end
+    object NovaSenha: TRectangle
+      Enabled = False
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 400.000000000000000000
+      Position.Y = 312.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edNovaSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Enabled = False
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object ConfirmaSenha: TRectangle
+      Enabled = False
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 400.000000000000000000
+      Position.Y = 424.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edConfirmaSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Enabled = False
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object SenhaAntiga: TRectangle
+      Enabled = False
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 392.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edSenhaAntiga: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Enabled = False
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object Email: TRectangle
+      Enabled = False
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 48.000000000000000000
+      Position.Y = 312.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edEmail: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Enabled = False
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+    object btnCadUsuario: TRectangle
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 392.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 159.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF6731BF
+      Stroke.Thickness = 2.000000000000000000
+      Visible = False
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object CadastrarUsuario: TText
+        Align = Center
+        Anchors = [akLeft, akTop, akRight]
+        Size.Width = 158.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cancelar'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF040404
+      end
+    end
+    object SuaPlataforma: TText
+      Position.X = 32.000000000000000000
+      Position.Y = 31.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Configura'#231#245'es'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object Text1: TText
+      Position.X = 36.000000000000000000
+      Position.Y = 279.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Senha'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text2: TText
+      Position.X = 404.000000000000000000
+      Position.Y = 391.000000000000000000
+      Size.Width = 117.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Confirmar Senha'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text3: TText
+      Position.X = 28.000000000000000000
+      Position.Y = 167.000000000000000000
+      Size.Width = 93.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Usu'#225'rio'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text4: TText
+      Position.X = 392.000000000000000000
+      Position.Y = 167.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Senha Antiga'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Text5: TText
+      Position.X = 396.000000000000000000
+      Position.Y = 279.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nova Senha'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claGray
+    end
+    object Usuario: TRectangle
+      Enabled = False
+      Fill.Color = claWhite
+      HitTest = False
+      Position.X = 48.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object edUsuario: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        TextSettings.Font.Family = 'Poppins'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 281.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Size, FontColor]
+      end
+    end
+  end
+end

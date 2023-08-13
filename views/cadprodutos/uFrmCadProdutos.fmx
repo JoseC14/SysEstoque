@@ -12,9 +12,8 @@
   OnCreate = FormCreate
   DesignerMasterStyle = 0
   object LayPrincipal: TLayout
-    Position.Y = 8.000000000000000000
     Size.Width = 801.000000000000000000
-    Size.Height = 657.000000000000000000
+    Size.Height = 753.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 10
     object btnCadastrar: TRectangle

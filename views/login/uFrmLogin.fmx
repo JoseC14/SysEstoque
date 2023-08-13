@@ -15,7 +15,7 @@ object frmLogin: TfrmLogin
     Position.X = 464.000000000000000000
     Position.Y = 8.000000000000000000
     Size.Width = 327.000000000000000000
-    Size.Height = 425.000000000000000000
+    Size.Height = 449.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object InsiraSeusDados: TText
@@ -86,17 +86,20 @@ object frmLogin: TfrmLogin
         object PasswordEditButton1: TPasswordEditButton
           CanFocus = False
           Cursor = crArrow
+          IsPressed = True
           Size.Width = 28.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
+          StaysPressed = True
           TabOrder = 0
+          Text = 'DASDA'
         end
       end
     end
     object btnCadUsuario: TRectangle
       Anchors = [akLeft, akTop, akRight]
       Position.X = 24.000000000000000000
-      Position.Y = 368.000000000000000000
+      Position.Y = 400.000000000000000000
       Size.Width = 276.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
@@ -172,16 +175,17 @@ object frmLogin: TfrmLogin
       end
     end
     object Text5: TText
-      Position.Y = 344.000000000000000000
-      Size.Width = 154.000000000000000000
-      Size.Height = 17.000000000000000000
+      Position.X = 24.000000000000000000
+      Position.Y = 376.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 15.000000000000000000
       Size.PlatformDefault = False
       Text = 
         '________________________________________________________________' +
         '_'
       TextSettings.FontColor = claGray
       object Text7: TText
-        Position.X = 140.000000000000000000
+        Position.X = 113.000000000000000000
         Size.Width = 50.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
@@ -190,15 +194,29 @@ object frmLogin: TfrmLogin
       end
     end
     object Text6: TText
-      Position.X = 176.000000000000000000
-      Position.Y = 342.000000000000000000
-      Size.Width = 154.000000000000000000
-      Size.Height = 21.000000000000000000
+      Position.X = 188.000000000000000000
+      Position.Y = 382.000000000000000000
+      Size.Width = 109.000000000000000000
+      Size.Height = 15.000000000000000000
       Size.PlatformDefault = False
       Text = 
         '________________________________________________________________' +
         '_'
       TextSettings.FontColor = claGray
+    end
+    object Text8: TText
+      Cursor = crHandPoint
+      Position.X = 182.000000000000000000
+      Position.Y = 351.000000000000000000
+      Size.Width = 115.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'esqueceu a senha?'
+      TextSettings.Font.Family = 'Poppins'
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBlueviolet
+      OnClick = Text8Click
     end
   end
   object Titulo: TLayout
