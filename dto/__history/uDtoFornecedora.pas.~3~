@@ -1,0 +1,40 @@
+unit uDtoFornecedora;
+
+interface
+  type
+    Fornecedora = class
+      private
+        FCnpj     : String;
+        FTelefone : String;
+        FEndereco : String;
+        procedure setCnpj(const Value: string);
+        procedure setTelefone(const Value: string);
+        procedure setEndereco(const Value: string);
+
+      public
+        property Cnpj     : string read FCnpj write setCnpj;
+        property Telefone : string read FTelefone write setTelefone;
+        property Endereco : string read FEndereco write setEndereco;
+
+    end;
+
+implementation
+
+{ Fornecedora }
+
+procedure Fornecedora.setCnpj(const Value: string);
+begin
+FCnpj := Value
+end;
+
+procedure Fornecedora.setEndereco(const Value: string);
+begin
+
+end;
+
+procedure Fornecedora.setTelefone(const Value: string);
+begin
+
+end;
+
+end.

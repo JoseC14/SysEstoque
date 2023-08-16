@@ -86,7 +86,6 @@ object frmLogin: TfrmLogin
         object PasswordEditButton1: TPasswordEditButton
           CanFocus = False
           Cursor = crArrow
-          HitTest = False
           IsPressed = True
           Size.Width = 28.000000000000000000
           Size.Height = 45.000000000000000000

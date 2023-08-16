@@ -7,7 +7,6 @@ object frmCadFornecedores: TfrmCadFornecedores
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object NomeTransportadora: TRectangle
     Fill.Color = claWhite
@@ -99,7 +98,7 @@ object frmCadFornecedores: TfrmCadFornecedores
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claGray
   end
-  object CNPJ: TRectangle
+  object Rectangle1: TRectangle
     Fill.Color = claWhite
     HitTest = False
     Position.X = 392.000000000000000000
@@ -110,7 +109,7 @@ object frmCadFornecedores: TfrmCadFornecedores
     Stroke.Thickness = 0.000000000000000000
     XRadius = 10.000000000000000000
     YRadius = 10.000000000000000000
-    object edCNPJ: TEdit
+    object Edit1: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       StyleLookup = 'transparentedit'
       TabOrder = 0

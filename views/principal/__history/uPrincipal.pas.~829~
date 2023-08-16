@@ -1315,9 +1315,6 @@ if isFornecedoraVisible = False then
       isConfiguracoesVisible := False;
       mudarCorLeave(Configuracoes,isConfiguracoesVisible)
      end;
-     frmFornecedoras := TfrmFornecedoras.Create(Self);
-     frmFornecedoras.LayPrincipal.Parent := Principal;
-     frmFornecedoras.LayPrincipal.Create(Self);
      mudarCorEnter(Transportadora);
      isFornecedoraVisible                := True;
    end;

@@ -1,0 +1,13 @@
+unit uDtoTransportadora;
+
+interface
+  type
+    Transportadora = class
+      private
+        FCnpj : String;
+        FTelefone : String;
+    end;
+
+implementation
+
+end.

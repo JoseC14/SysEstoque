@@ -1,0 +1,89 @@
+unit uDtoProduto;
+
+interface
+  type
+    Produto = class
+      private
+        FNome             : String;
+        FPreco            : Real;
+        FQuantidade       : Integer;
+        FValidade         : String;
+        FCodigobarra      : String;
+        FIdfornecedora    : Integer;
+        FIdtransportadora : Integer;
+        procedure setNome(const Value: string);
+        procedure SetPreco(const Value: Real);
+        procedure setQuantidade(const Value: Integer);
+        procedure setValidade(const Value: string);
+        procedure setCodigoBarra(const Value: Integer);
+        procedure setIdFornecedora(const Value: Integer);
+    procedure setIdTransportadora(const Value: Integer);
+
+      public
+        constructor Create(Nome,Validade:String;Preco : Real; Quantidade,codigoBarra,
+        idFornecedora,idTransportadora : Integer);
+
+        property Nome             : string read FNome write setNome;
+        property Preco            : Real read FPreco write SetPreco;
+        property Quantidade       : Integer read FQuantidade write setQuantidade;
+        property Validade         : string read FValidade write setValidade;
+        property CodigoBarra      : string read FCodigoBarra write setCodigoBarra;
+        property IdFornecedora    : Integer read FIdFornecedora write setIdFornecedora;
+        property IdTransportadora : Integer read FIdTransportadora write setIdTransportadora;
+
+    end;
+
+implementation
+
+{ Produto }
+
+constructor Produto.Create(Nome, Validade: String; Preco: Real; Quantidade,
+  codigoBarra, idFornecedora, idTransportadora: Integer);
+begin
+nome             := Nome;
+validade         := Validade;
+preco            := Preco;
+quantidade       := Quantidade;
+codigobarra      := codigoBarra;
+idfornecedora    := idFornecedora;
+idtransportadora := idTransportadora;
+
+end;
+
+
+procedure Produto.setCodigoBarra(const Value: String);
+begin
+  FCodigoBarra := Value;
+end;
+
+procedure Produto.setIdFornecedora(const Value: Integer);
+begin
+  FIdFornecedora := Value;
+end;
+
+procedure Produto.setIdTransportadora(const Value: Integer);
+begin
+  FIdTransportadora := Value;
+end;
+
+procedure Produto.setNome(const Value: string);
+begin
+  FNome := Value;
+end;
+
+procedure Produto.SetPreco(const Value: Real);
+begin
+  FPreco := Value;
+end;
+
+procedure Produto.setQuantidade(const Value: Integer);
+begin
+  FQuantidade := Value;
+end;
+
+procedure Produto.setValidade(const Value: string);
+begin
+  FValidade := Value;
+end;
+
+end.

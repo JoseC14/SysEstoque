@@ -1,0 +1,19 @@
+unit uDtoEmpresa;
+
+interface
+  type
+    Empresa = class
+      private
+        FNome       : string;
+        FCnpj       : string;
+        FCidade     : string;
+        FUf         : string;
+        FCaminhoNfe : string;
+      public
+        property Nome : string read FNome write setNome;
+        property FCnpj : string read FCnpj write setCnpj;
+    end;
+
+implementation
+
+end.

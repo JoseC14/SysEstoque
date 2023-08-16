@@ -1,0 +1,19 @@
+unit uDtoTransportadora;
+
+interface
+  type
+    Transportadora = class
+      private
+        FCnpj     : String;
+        FTelefone : String;
+        FEndereco : String;
+
+      public
+      property Cnpj : string read FCnpj write setCnpj;
+      property Telefone : string read FTelefone write setTelefone;
+
+    end;
+
+implementation
+
+end.

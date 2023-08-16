@@ -88,6 +88,7 @@ object frmLogin: TfrmLogin
           Cursor = crArrow
           HitTest = False
           IsPressed = True
+          RepeatClick = True
           Size.Width = 28.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False

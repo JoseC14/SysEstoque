@@ -1,0 +1,18 @@
+unit uDtoVendas;
+
+interface
+  type
+    Vendas = class
+      private
+        FIdProdutos      : Integer;
+        FTotal           : Real;
+        FValorRecebido   : Real;
+        FTroco           : Real;
+        FMetodoPagamento : Real;
+
+      public
+        property IdProdutos : Integer read FIdProdutos write setIdProdutos;
+    end;
+implementation
+
+end.

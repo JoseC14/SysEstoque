@@ -1,0 +1,15 @@
+unit uDtoVendas;
+
+interface
+  type
+    Vendas = class
+      private
+        FIdProdutos      : Integer;
+        FTotal           : Real;
+        FValorRecebido   : Real;
+        FTroco           : Real;
+        FMetodoPagamento : Real;
+    end;
+implementation
+
+end.

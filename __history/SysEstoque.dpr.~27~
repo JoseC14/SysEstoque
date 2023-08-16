@@ -25,11 +25,7 @@ uses
   uFrmEsqueceuSenha in 'views\esqueceusenha\uFrmEsqueceuSenha.pas' {frmEsqueciSenha},
   uFrmCodigo in 'views\codigo\uFrmCodigo.pas' {frmCodigo},
   uFrmNovaSenha in 'views\novasenha\uFrmNovaSenha.pas' {frmNovaSenha},
-  uDtoProduto in 'dto\uDtoProduto.pas',
-  uDtoTransportadora in 'dto\uDtoTransportadora.pas',
-  uDtoFornecedora in 'dto\uDtoFornecedora.pas',
-  uDtoVendas in 'dto\uDtoVendas.pas',
-  uDtoEmpresa in 'dto\uDtoEmpresa.pas';
+  uDtoProduto in 'dto\uDtoProduto.pas';
 
 {$R *.res}
 

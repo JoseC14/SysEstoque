@@ -262,19 +262,4 @@ object frmConfiguracoes: TfrmConfiguracoes
       end
     end
   end
-  object ACBrPixCD1: TACBrPixCD
-    Recebedor.CEP = '63504645'
-    Recebedor.CodCategoriaComerciante = 0
-    PSP = PSP
-    Left = 688
-    Top = 184
-  end
-  object PSP: TACBrPSPItau
-    ACBrPixCD = ACBrPixCD1
-    ChavePIX = 'josecarlosv8474@gmail.com'
-    Scopes = [scCobWrite, scCobRead, scPixWrite, scPixRead]
-    ClientSecret = ' '
-    Left = 736
-    Top = 240
-  end
 end

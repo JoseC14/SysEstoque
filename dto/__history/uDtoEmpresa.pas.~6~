@@ -1,0 +1,16 @@
+unit uDtoEmpresa;
+
+interface
+  type
+    Empresa = class
+      private
+        FNome       : string;
+        FCnpj       : string;
+        FCidade     : string;
+        FUf         : string;
+        FCaminhoNfe : string;
+    end;
+
+implementation
+
+end.

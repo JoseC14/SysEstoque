@@ -1,0 +1,34 @@
+unit uDtoVendas;
+
+interface
+  type
+    Vendas = class
+      private
+        FIdProdutos      : Integer;
+        FTotal           : Real;
+        FValorRecebido   : Real;
+        FTroco           : Real;
+        FMetodoPagamento : Real;
+    procedure setIdProdutos(const Value: Integer);
+    procedure setTotal(const Value: Real);
+
+      public
+        property IdProdutos : Integer read FIdProdutos write setIdProdutos;
+        property Total      : Real read FTotal write setTotal;
+        property FValorRecebido : Real read FValorRecebido write setValorRecebido;
+    end;
+implementation
+
+{ Vendas }
+
+procedure Vendas.setIdProdutos(const Value: Integer);
+begin
+  FIdProdutos := Value;
+end;
+
+procedure Vendas.setTotal(const Value: Real);
+begin
+  FTotal := Value;
+end;
+
+end.

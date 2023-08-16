@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
-  FMX.Controls.Presentation, FMX.Edit, uUtils, MaskUtils;
+  FMX.Controls.Presentation, FMX.Edit, uUtils;
 
 type
   TfrmCadFornecedores = class(TForm)
@@ -17,8 +17,8 @@ type
     edTelefone: TEdit;
     SuaPlataforma: TText;
     Text3: TText;
-    CNPJ: TRectangle;
-    edCNPJ: TEdit;
+    Rectangle1: TRectangle;
+    Edit1: TEdit;
     Rectangle2: TRectangle;
     Edit2: TEdit;
     Text4: TText;
@@ -28,7 +28,6 @@ type
     procedure btnCadastrarMouseEnter(Sender: TObject);
     procedure btnCadastrarMouseLeave(Sender: TObject);
     procedure Text8MouseLeave(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -62,11 +61,6 @@ begin
   uUtils.voltaCorBotaoDegrade(btnCadastrar);
 
   uUtils.Free;
-end;
-
-procedure TfrmCadFornecedores.FormCreate(Sender: TObject);
-begin
-  edCNPJ.Text := FormatMaskText('000.000.00-00', edCNPJ.Text);
 end;
 
 procedure TfrmCadFornecedores.Text8MouseEnter(Sender: TObject);

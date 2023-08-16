@@ -30,7 +30,7 @@ object frmConfiguracoes: TfrmConfiguracoes
       Fill.Gradient.StartPosition.Y = 1.000000000000000000
       Fill.Gradient.StopPosition.X = 0.499999970197677600
       Fill.Gradient.StopPosition.Y = 0.000000000000000000
-      Position.X = 496.000000000000000000
+      Position.X = 576.000000000000000000
       Position.Y = 112.000000000000000000
       Size.Width = 175.000000000000000000
       Size.Height = 41.000000000000000000
@@ -151,13 +151,14 @@ object frmConfiguracoes: TfrmConfiguracoes
     end
     object btnCadUsuario: TRectangle
       Anchors = [akLeft, akTop, akRight]
-      Position.X = 288.000000000000000000
+      Position.X = 392.000000000000000000
       Position.Y = 112.000000000000000000
       Size.Width = 159.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       Stroke.Color = xFF6731BF
       Stroke.Thickness = 2.000000000000000000
+      Visible = False
       XRadius = 10.000000000000000000
       YRadius = 10.000000000000000000
       object CadastrarUsuario: TText
@@ -261,20 +262,5 @@ object frmConfiguracoes: TfrmConfiguracoes
         StyledSettings = [Size, FontColor]
       end
     end
-  end
-  object ACBrPixCD1: TACBrPixCD
-    Recebedor.CEP = '63504645'
-    Recebedor.CodCategoriaComerciante = 0
-    PSP = PSP
-    Left = 688
-    Top = 184
-  end
-  object PSP: TACBrPSPItau
-    ACBrPixCD = ACBrPixCD1
-    ChavePIX = 'josecarlosv8474@gmail.com'
-    Scopes = [scCobWrite, scCobRead, scPixWrite, scPixRead]
-    ClientSecret = ' '
-    Left = 736
-    Top = 240
   end
 end

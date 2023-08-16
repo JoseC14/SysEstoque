@@ -483,6 +483,11 @@
             <Form>frmNovaSenha</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="dto\uDtoProduto.pas"/>
+        <DCCReference Include="dto\uDtoTransportadora.pas"/>
+        <DCCReference Include="dto\uDtoFornecedora.pas"/>
+        <DCCReference Include="dto\uDtoVendas.pas"/>
+        <DCCReference Include="dto\uDtoEmpresa.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

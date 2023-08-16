@@ -605,9 +605,6 @@ begin
      end;
      mudarCorEnter(Produtos);
      isProdutosVisible := True;
-     frmProdutos := TfrmProdutos.Create(Self);
-     frmProdutos.LayPrincipal.Parent := Principal;
-     frmProdutos.LayPrincipal.Create(self);
    end;
 end;
 
@@ -1315,9 +1312,6 @@ if isFornecedoraVisible = False then
       isConfiguracoesVisible := False;
       mudarCorLeave(Configuracoes,isConfiguracoesVisible)
      end;
-     frmFornecedoras := TfrmFornecedoras.Create(Self);
-     frmFornecedoras.LayPrincipal.Parent := Principal;
-     frmFornecedoras.LayPrincipal.Create(Self);
      mudarCorEnter(Transportadora);
      isFornecedoraVisible                := True;
    end;
